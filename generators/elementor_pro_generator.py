@@ -101,22 +101,69 @@ class ElementorProGenerator:
     # ============== SECTION CREATORS ==============
 
     def _create_header(self, design_spec):
-        """Create navigation header section"""
+        """Create navigation header section with text links (no menu required)"""
         colors = self._get_colors(design_spec)
         font = self._get_fonts(design_spec)
+        btn_style = self._get_button_style(design_spec)
+
+        # Get navigation items from design spec or use defaults
+        nav_items = design_spec.get('nav_items', ['Home', 'Services', 'About', 'Contact'])
+
+        # Create nav link widgets
+        nav_links = []
+        for item in nav_items:
+            nav_links.append({
+                'id': self._generate_id(),
+                'elType': 'widget',
+                'widgetType': 'button',
+                'settings': {
+                    'text': item,
+                    'link': {'url': f'#{item.lower().replace(" ", "-")}'},
+                    'button_type': 'link',
+                    'button_text_color': colors['text'],
+                    'typography_typography': 'custom',
+                    'typography_font_family': font,
+                    'typography_font_size': {'unit': 'px', 'size': 15},
+                    'typography_font_weight': '500',
+                    'button_padding': {'unit': 'px', 'top': '10', 'right': '16', 'bottom': '10', 'left': '16'},
+                    'hover_color': colors['primary']
+                }
+            })
+
+        # Add CTA button at the end
+        nav_links.append({
+            'id': self._generate_id(),
+            'elType': 'widget',
+            'widgetType': 'button',
+            'settings': {
+                'text': design_spec.get('header_cta', 'Get Started'),
+                'link': {'url': '#contact'},
+                'background_color': colors['primary'],
+                'button_text_color': '#ffffff',
+                'border_radius': {'unit': 'px', 'size': int(btn_style.get('border_radius', '8').replace('px', ''))},
+                'typography_typography': 'custom',
+                'typography_font_family': font,
+                'typography_font_size': {'unit': 'px', 'size': 14},
+                'typography_font_weight': '600',
+                'button_padding': {'unit': 'px', 'top': '12', 'right': '24', 'bottom': '12', 'left': '24'}
+            }
+        })
 
         return {
             'id': self._generate_id(),
             'elType': 'container',
             'settings': {
-                'content_width': 'boxed',
-                'boxed_width': {'unit': 'px', 'size': 1200},
+                'content_width': 'full',
                 'flex_direction': 'row',
                 'flex_justify_content': 'space-between',
                 'flex_align_items': 'center',
-                'padding': {'unit': 'px', 'top': '20', 'right': '30', 'bottom': '20', 'left': '30'},
+                'padding': {'unit': 'px', 'top': '15', 'right': '50', 'bottom': '15', 'left': '50'},
                 'background_background': 'classic',
-                'background_color': colors['background']
+                'background_color': colors['background'],
+                'position': 'fixed',
+                'z_index': 100,
+                'box_shadow_box_shadow_type': 'yes',
+                'box_shadow_box_shadow': {'horizontal': 0, 'vertical': 2, 'blur': 10, 'spread': 0, 'color': 'rgba(0,0,0,0.05)'}
             },
             'elements': [
                 {
@@ -125,26 +172,23 @@ class ElementorProGenerator:
                     'widgetType': 'heading',
                     'settings': {
                         'title': design_spec.get('site_name', 'Brand'),
-                        'header_size': 'h3',
+                        'header_size': 'h4',
                         'title_color': colors['primary'],
                         'typography_typography': 'custom',
                         'typography_font_family': font,
-                        'typography_font_weight': '700'
+                        'typography_font_weight': '700',
+                        'typography_font_size': {'unit': 'px', 'size': 24}
                     }
                 },
                 {
                     'id': self._generate_id(),
-                    'elType': 'widget',
-                    'widgetType': 'nav-menu',
+                    'elType': 'container',
                     'settings': {
-                        'menu': 'main-menu',
-                        'layout': 'horizontal',
-                        'align': 'right',
-                        'pointer': 'underline',
-                        'typography_typography': 'custom',
-                        'typography_font_family': font,
-                        'typography_font_size': {'unit': 'px', 'size': 16}
-                    }
+                        'flex_direction': 'row',
+                        'flex_align_items': 'center',
+                        'flex_gap': {'unit': 'px', 'size': 8}
+                    },
+                    'elements': nav_links
                 }
             ]
         }
