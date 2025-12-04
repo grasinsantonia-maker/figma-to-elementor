@@ -60,7 +60,11 @@ class DescriptionParser:
             'law': {'colors': ['#003366', '#333333'], 'fonts': ['Merriweather', 'Open Sans'], 'style': 'professional'},
             'finance': {'colors': ['#003366', '#28a745'], 'fonts': ['Roboto', 'Open Sans'], 'style': 'professional'},
             'fintech': {'colors': ['#6f42c1', '#28a745'], 'fonts': ['Inter', 'Roboto'], 'style': 'modern'},
-            'real estate': {'colors': ['#28a745', '#333333'], 'fonts': ['Playfair Display', 'Lato'], 'style': 'elegant'},
+            'real estate': {'colors': ['#C9A87C', '#1a1a2e'], 'fonts': ['Poppins', 'Lato'], 'style': 'luxury', 'industry': 'real_estate'},
+            'property': {'colors': ['#C9A87C', '#1a1a2e'], 'fonts': ['Poppins', 'Lato'], 'style': 'luxury', 'industry': 'real_estate'},
+            'realty': {'colors': ['#C9A87C', '#1a1a2e'], 'fonts': ['Poppins', 'Lato'], 'style': 'luxury', 'industry': 'real_estate'},
+            'dubai': {'colors': ['#C9A87C', '#1a1a2e'], 'fonts': ['Poppins', 'Lato'], 'style': 'luxury', 'industry': 'real_estate'},
+            'luxury': {'colors': ['#C9A87C', '#1a1a2e'], 'fonts': ['Poppins', 'Lato'], 'style': 'luxury', 'industry': 'real_estate'},
             'restaurant': {'colors': ['#dc3545', '#333333'], 'fonts': ['Playfair Display', 'Lato'], 'style': 'warm'},
             'food': {'colors': ['#fd7e14', '#333333'], 'fonts': ['Poppins', 'Open Sans'], 'style': 'warm'},
             'fashion': {'colors': ['#1a1a1a', '#ffffff'], 'fonts': ['Playfair Display', 'Montserrat'], 'style': 'elegant'},
@@ -161,7 +165,8 @@ class DescriptionParser:
             'hero': hero,
             'sections': sections,
             'footer': True,
-            'style': industry_style.get('style', 'modern')
+            'style': industry_style.get('style', 'modern'),
+            'industry': industry_style.get('industry', 'default')
         }
 
         # Merge with inspiration insights if provided
@@ -188,6 +193,17 @@ class DescriptionParser:
 
     def _extract_colors(self, description: str, inspirations: List[Dict] = None) -> Dict[str, str]:
         """Extract color preferences from description"""
+        # Check for real estate / luxury keywords first
+        if any(keyword in description for keyword in ['real estate', 'property', 'realty', 'dubai', 'luxury']):
+            colors = {
+                'primary': '#C9A87C',
+                'secondary': '#1a1a2e',
+                'text': '#ffffff',
+                'background': '#0a0a0f',
+                'accent': '#C9A87C'
+            }
+            return colors
+
         colors = {
             'primary': '#0066cc',
             'secondary': '#333333',
