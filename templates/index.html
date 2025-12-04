@@ -3,124 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figma to Elementor Converter</title>
+    <title>Website Builder - Describe & Create</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Figma to Elementor</h1>
-            <p class="subtitle">Convert your Figma designs to WordPress/Elementor templates</p>
-        </header>
-
-        <main>
-            <!-- Step 1: Figma Data Input -->
-            <section class="card" id="step-figma">
-                <div class="step-header">
-                    <span class="step-number">1</span>
-                    <h2>Paste Figma Data</h2>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="logo-icon">✨</span>
+                <span class="logo-text">WebBuilder AI</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active" data-step="1">
+                    <span class="nav-icon">📝</span>
+                    <span>Describe</span>
+                </a>
+                <a href="#" class="nav-item" data-step="2">
+                    <span class="nav-icon">🎨</span>
+                    <span>Inspiration</span>
+                </a>
+                <a href="#" class="nav-item" data-step="3">
+                    <span class="nav-icon">⚙️</span>
+                    <span>Customize</span>
+                </a>
+                <a href="#" class="nav-item" data-step="4">
+                    <span class="nav-icon">🚀</span>
+                    <span>Publish</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="connection-status">
+                    <span class="status-dot"></span>
+                    <span class="status-text">WordPress Connected</span>
                 </div>
-                <div class="step-content">
-                    <p>Paste the Figma node JSON data from your MCP connection or Figma API:</p>
-                    <textarea id="figma-json" placeholder='{"id": "1:2", "name": "Frame", "type": "FRAME", ...}'></textarea>
-                    <button class="btn primary" onclick="convertFigma()">Convert to Elementor</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Step 1: Description -->
+            <section class="step-panel active" id="step-1">
+                <div class="step-header">
+                    <h1>Describe Your Website</h1>
+                    <p>Tell us what kind of website you want to create. Be as specific as you like!</p>
+                </div>
+
+                <div class="form-section">
+                    <label class="form-label">Website Description</label>
+                    <textarea
+                        id="description-input"
+                        class="description-textarea"
+                        placeholder="Example: I want a modern tech startup website for TechFlow with blue and white colors. It should have a services section, about us, testimonials, and a contact form. Use rounded buttons and make it feel spacious and clean. The headline should be 'Innovate Your Future' with a 'Start Free Trial' button."
+                    ></textarea>
+                    <div class="char-count"><span id="char-count">0</span> characters</div>
+                </div>
+
+                <div class="quick-options">
+                    <h3>Quick Add Sections</h3>
+                    <div class="chip-group">
+                        <button class="chip" data-section="services">Services</button>
+                        <button class="chip" data-section="about">About Us</button>
+                        <button class="chip" data-section="testimonials">Testimonials</button>
+                        <button class="chip" data-section="team">Team</button>
+                        <button class="chip" data-section="portfolio">Portfolio</button>
+                        <button class="chip" data-section="pricing">Pricing</button>
+                        <button class="chip" data-section="faq">FAQ</button>
+                        <button class="chip" data-section="contact">Contact</button>
+                        <button class="chip" data-section="blog">Blog</button>
+                        <button class="chip" data-section="stats">Stats</button>
+                        <button class="chip" data-section="clients">Client Logos</button>
+                        <button class="chip" data-section="cta">Call to Action</button>
+                    </div>
+                </div>
+
+                <div class="step-actions">
+                    <button class="btn btn-primary btn-large" onclick="goToStep(2)">
+                        Continue to Inspiration →
+                    </button>
                 </div>
             </section>
 
-            <!-- Step 2: Preview & Download -->
-            <section class="card hidden" id="step-preview">
+            <!-- Step 2: Inspiration Sites -->
+            <section class="step-panel" id="step-2">
                 <div class="step-header">
-                    <span class="step-number">2</span>
-                    <h2>Preview & Download</h2>
+                    <h1>Add Inspiration Sites</h1>
+                    <p>Add 2-3 websites you like. We'll analyze their design patterns, colors, and structure.</p>
                 </div>
-                <div class="step-content">
-                    <div class="preview-stats">
-                        <div class="stat">
-                            <span class="stat-value" id="element-count">0</span>
-                            <span class="stat-label">Elements</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value" id="color-count">0</span>
-                            <span class="stat-label">Colors</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value" id="font-count">0</span>
-                            <span class="stat-label">Fonts</span>
-                        </div>
-                    </div>
 
-                    <div class="tabs">
-                        <button class="tab active" onclick="showTab('elementor-json')">Elementor JSON</button>
-                        <button class="tab" onclick="showTab('css-vars')">CSS Variables</button>
+                <div class="inspiration-list" id="inspiration-list">
+                    <div class="inspiration-item">
+                        <input type="url" class="inspiration-url" placeholder="https://example.com">
+                        <button class="btn btn-icon btn-analyze" onclick="analyzeSite(this)">
+                            <span class="spinner hidden"></span>
+                            <span class="btn-text">Analyze</span>
+                        </button>
+                        <div class="analysis-result hidden"></div>
                     </div>
+                </div>
 
-                    <div class="tab-content active" id="elementor-json">
-                        <pre id="elementor-preview"></pre>
-                    </div>
-                    <div class="tab-content" id="css-vars">
-                        <pre id="css-preview"></pre>
-                    </div>
+                <button class="btn btn-secondary btn-add-site" onclick="addInspirationField()">
+                    + Add Another Site
+                </button>
 
-                    <div class="actions">
-                        <button class="btn secondary" onclick="downloadJSON()">Download JSON</button>
-                        <button class="btn primary" onclick="showWordPressConnect()">Push to WordPress</button>
+                <div class="analysis-summary hidden" id="analysis-summary">
+                    <h3>Combined Analysis</h3>
+                    <div class="summary-grid">
+                        <div class="summary-item">
+                            <h4>Common Colors</h4>
+                            <div class="color-swatches" id="common-colors"></div>
+                        </div>
+                        <div class="summary-item">
+                            <h4>Fonts</h4>
+                            <div class="font-list" id="common-fonts"></div>
+                        </div>
+                        <div class="summary-item">
+                            <h4>Recommended Sections</h4>
+                            <div class="section-list" id="recommended-sections"></div>
+                        </div>
                     </div>
+                </div>
+
+                <div class="step-actions">
+                    <button class="btn btn-outline" onclick="goToStep(1)">← Back</button>
+                    <button class="btn btn-primary btn-large" onclick="generateDesign()">
+                        <span class="spinner hidden" id="generate-spinner"></span>
+                        <span id="generate-text">Generate Design →</span>
+                    </button>
                 </div>
             </section>
 
-            <!-- Step 3: WordPress Connection -->
-            <section class="card hidden" id="step-wordpress">
+            <!-- Step 3: Customize -->
+            <section class="step-panel" id="step-3">
                 <div class="step-header">
-                    <span class="step-number">3</span>
-                    <h2>Connect to WordPress</h2>
+                    <h1>Customize Your Design</h1>
+                    <p>Review and adjust the generated design before publishing.</p>
                 </div>
-                <div class="step-content">
-                    <div class="form-group">
-                        <label for="wp-url">WordPress Site URL</label>
-                        <input type="url" id="wp-url" placeholder="https://yoursite.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="wp-username">Username</label>
-                        <input type="text" id="wp-username" placeholder="admin">
-                    </div>
-                    <div class="form-group">
-                        <label for="wp-password">Application Password</label>
-                        <input type="password" id="wp-password" placeholder="xxxx xxxx xxxx xxxx">
-                        <small>Generate an Application Password in WordPress: Users > Your Profile > Application Passwords</small>
-                    </div>
-                    <button class="btn secondary" onclick="testWordPress()">Test Connection</button>
-                    <div id="wp-status" class="status hidden"></div>
 
-                    <hr>
-
-                    <div class="form-group">
-                        <label for="page-title">Page Title</label>
-                        <input type="text" id="page-title" placeholder="Imported from Figma">
-                    </div>
-                    <div class="form-group">
-                        <label>Create As</label>
-                        <div class="radio-group">
-                            <label><input type="radio" name="create-as" value="page" checked> Page</label>
-                            <label><input type="radio" name="create-as" value="template"> Elementor Template</label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Status</label>
-                        <div class="radio-group">
-                            <label><input type="radio" name="status" value="draft" checked> Draft</label>
-                            <label><input type="radio" name="status" value="publish"> Published</label>
+                <div class="customization-grid">
+                    <div class="customize-section">
+                        <h3>Colors</h3>
+                        <div class="color-picker-grid">
+                            <div class="color-input-group">
+                                <label>Primary</label>
+                                <input type="color" id="color-primary" value="#0066cc">
+                            </div>
+                            <div class="color-input-group">
+                                <label>Secondary</label>
+                                <input type="color" id="color-secondary" value="#333333">
+                            </div>
+                            <div class="color-input-group">
+                                <label>Accent</label>
+                                <input type="color" id="color-accent" value="#ff6600">
+                            </div>
+                            <div class="color-input-group">
+                                <label>Background</label>
+                                <input type="color" id="color-background" value="#ffffff">
+                            </div>
                         </div>
                     </div>
 
-                    <button class="btn primary" onclick="pushToWordPress()">Push to WordPress</button>
-                    <div id="push-status" class="status hidden"></div>
+                    <div class="customize-section">
+                        <h3>Typography</h3>
+                        <select id="font-select" class="form-select">
+                            <option value="Inter">Inter</option>
+                            <option value="Roboto">Roboto</option>
+                            <option value="Open Sans">Open Sans</option>
+                            <option value="Poppins">Poppins</option>
+                            <option value="Montserrat">Montserrat</option>
+                            <option value="Lato">Lato</option>
+                            <option value="Playfair Display">Playfair Display</option>
+                            <option value="Raleway">Raleway</option>
+                        </select>
+                    </div>
+
+                    <div class="customize-section">
+                        <h3>Button Style</h3>
+                        <div class="button-style-options">
+                            <label class="style-option">
+                                <input type="radio" name="button-style" value="rounded" checked>
+                                <span class="btn-preview rounded">Rounded</span>
+                            </label>
+                            <label class="style-option">
+                                <input type="radio" name="button-style" value="pill">
+                                <span class="btn-preview pill">Pill</span>
+                            </label>
+                            <label class="style-option">
+                                <input type="radio" name="button-style" value="sharp">
+                                <span class="btn-preview sharp">Sharp</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="customize-section">
+                        <h3>Sections (Drag to Reorder)</h3>
+                        <div class="section-reorder" id="section-list">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="preview-panel">
+                    <h3>Preview JSON</h3>
+                    <pre id="preview-json" class="code-preview"></pre>
+                </div>
+
+                <div class="step-actions">
+                    <button class="btn btn-outline" onclick="goToStep(2)">← Back</button>
+                    <button class="btn btn-secondary" onclick="downloadTemplate()">Download JSON</button>
+                    <button class="btn btn-primary btn-large" onclick="goToStep(4)">
+                        Publish to WordPress →
+                    </button>
+                </div>
+            </section>
+
+            <!-- Step 4: Publish -->
+            <section class="step-panel" id="step-4">
+                <div class="step-header">
+                    <h1>Publish to WordPress</h1>
+                    <p>Push your design directly to your WordPress site with Elementor Pro.</p>
+                </div>
+
+                <div class="wordpress-config">
+                    <div class="form-group">
+                        <label class="form-label">WordPress Site URL</label>
+                        <input type="url" id="wp-url" class="form-input" value="https://wordpress-1097675-6048787.cloudwaysapps.com">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Username</label>
+                            <input type="text" id="wp-username" class="form-input" value="grasinsantonia@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Application Password</label>
+                            <input type="password" id="wp-password" class="form-input" value="7Fbg xKjQ fdKi JCNk JQIv ESxr">
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary" onclick="testConnection()">
+                        <span class="spinner hidden" id="test-spinner"></span>
+                        <span>Test Connection</span>
+                    </button>
+                    <div id="connection-result" class="connection-result hidden"></div>
+                </div>
+
+                <hr class="divider">
+
+                <div class="publish-options">
+                    <div class="form-group">
+                        <label class="form-label">Page Title</label>
+                        <input type="text" id="page-title" class="form-input" placeholder="My New Website">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Create As</label>
+                            <select id="create-type" class="form-select">
+                                <option value="page">Page</option>
+                                <option value="template">Elementor Template</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Status</label>
+                            <select id="page-status" class="form-select">
+                                <option value="publish">Published</option>
+                                <option value="draft">Draft</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-actions">
+                    <button class="btn btn-outline" onclick="goToStep(3)">← Back</button>
+                    <button class="btn btn-success btn-large" onclick="publishToWordPress()" id="publish-btn">
+                        <span class="spinner hidden" id="publish-spinner"></span>
+                        <span id="publish-text">🚀 Publish Now</span>
+                    </button>
+                </div>
+
+                <div id="publish-result" class="publish-result hidden">
+                    <div class="result-icon">✅</div>
+                    <h3>Successfully Published!</h3>
+                    <p>Your website has been created.</p>
+                    <div class="result-links">
+                        <a href="#" id="view-page-link" target="_blank" class="btn btn-outline">View Page</a>
+                        <a href="#" id="edit-elementor-link" target="_blank" class="btn btn-primary">Edit in Elementor</a>
+                    </div>
                 </div>
             </section>
         </main>
-
-        <footer>
-            <p>Built with Claude Code + Figma MCP</p>
-        </footer>
     </div>
 
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
