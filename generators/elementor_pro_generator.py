@@ -705,118 +705,127 @@ class ElementorProGenerator:
             ]
         }
 
-    # ==================== PRO SERVICES - DARK LUXURY THEME ====================
+    # ==================== ULTIMATE V1 SERVICES - IMAGE CARDS WITH GRADIENT ====================
     def _create_pro_services(self, design_spec, section_spec):
-        """Create modern services/features section - DARK LUXURY STYLE"""
+        """
+        ULTIMATE V1 Services Section - Desktop Optimized
+        - 6 cards in 2 rows (3 per row)
+        - 32% width cards with responsive breakpoints
+        - Background images with gradient overlays
+        - Full-width via elType: "section" + stretch_section
+        """
         colors = self._get_colors(design_spec)
-        font = self._get_fonts(design_spec)
         industry = design_spec.get('industry', 'default')
+
+        # High-quality Unsplash images for real estate
+        service_images = [
+            'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80',
+            'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80',
+            'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+            'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80',
+            'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
+            'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=80',
+        ]
 
         # Industry-specific services
         if industry == 'real_estate':
             services = section_spec.get('items', [
-                {'title': 'Property Search', 'description': 'Access exclusive off-market properties and new developments in prime Dubai locations.', 'icon': 'fas fa-search'},
-                {'title': 'Investment Advisory', 'description': 'Expert guidance on ROI, market trends, and portfolio diversification strategies.', 'icon': 'fas fa-chart-line'},
-                {'title': 'Due Diligence', 'description': 'Comprehensive property verification, legal checks, and market analysis.', 'icon': 'fas fa-shield-alt'},
-                {'title': 'Property Management', 'description': 'Full-service management including tenant relations, maintenance, and rent collection.', 'icon': 'fas fa-building'},
-                {'title': 'Relocation Services', 'description': 'End-to-end support for international clients moving to Dubai.', 'icon': 'fas fa-plane'},
-                {'title': 'Legal Support', 'description': 'Expert legal assistance for property transactions and visa applications.', 'icon': 'fas fa-balance-scale'}
+                {'title': 'Property Search', 'description': "Access exclusive listings across Dubai's premium neighborhoods"},
+                {'title': 'Investment Advisory', 'description': 'Expert guidance on high-yield real estate opportunities'},
+                {'title': 'Property Management', 'description': 'Full-service management for your real estate portfolio'},
+                {'title': 'Legal Services', 'description': 'Comprehensive due diligence and transaction support'},
+                {'title': 'Luxury Rentals', 'description': 'Premium furnished apartments and villas for rent'},
+                {'title': 'Off-Plan Projects', 'description': "Early access to Dubai's most anticipated developments"},
             ])
-            section_tagline = 'Our Services'
-            section_title = section_spec.get('title', 'Premium Real Estate Services')
-            section_subtitle = 'Comprehensive solutions for buyers, sellers, and investors in Dubai luxury real estate.'
+            section_tagline = 'WHY CHOOSE US'
+            section_title = section_spec.get('title', 'Our Services')
+            section_subtitle = "Comprehensive real estate solutions tailored to your investment goals in Dubai's dynamic property market."
         else:
             services = section_spec.get('items', [
-                {'title': 'Lightning Fast', 'description': 'Built for speed with optimized performance that loads in milliseconds.', 'icon': 'fas fa-bolt'},
-                {'title': 'Secure by Default', 'description': 'Enterprise-grade security with end-to-end encryption and compliance.', 'icon': 'fas fa-shield-alt'},
-                {'title': 'Scalable Infrastructure', 'description': 'Grows with your business from startup to enterprise seamlessly.', 'icon': 'fas fa-expand-arrows-alt'},
-                {'title': 'AI-Powered Analytics', 'description': 'Smart insights and recommendations powered by machine learning.', 'icon': 'fas fa-brain'},
-                {'title': '24/7 Expert Support', 'description': 'Dedicated support team available around the clock to help you succeed.', 'icon': 'fas fa-headset'},
-                {'title': 'API & Integrations', 'description': 'Connect with 500+ tools and build custom workflows with our API.', 'icon': 'fas fa-plug'}
+                {'title': 'Lightning Fast', 'description': 'Built for speed with optimized performance'},
+                {'title': 'Secure by Default', 'description': 'Enterprise-grade security with encryption'},
+                {'title': 'Scalable Infrastructure', 'description': 'Grows with your business seamlessly'},
+                {'title': 'AI-Powered Analytics', 'description': 'Smart insights powered by machine learning'},
+                {'title': '24/7 Expert Support', 'description': 'Dedicated support team available around the clock'},
+                {'title': 'API & Integrations', 'description': 'Connect with 500+ tools and build custom workflows'},
             ])
-            section_tagline = 'Why Choose Us'
-            section_title = section_spec.get('title', 'Everything you need to succeed')
+            section_tagline = 'WHY CHOOSE US'
+            section_title = section_spec.get('title', 'Our Services')
             section_subtitle = 'Powerful features designed to help you build, launch, and grow your business faster than ever.'
 
+        # Create ULTIMATE V1 image cards with gradient overlays
         service_cards = []
-        for service in services:
+        for i, service in enumerate(services):
+            image_url = service.get('image', service_images[i % len(service_images)])
             service_cards.append({
                 'id': self._generate_id(),
                 'elType': 'container',
                 'settings': {
-                    'width': {'unit': '%', 'size': 30},
-                    'min_width': {'unit': 'px', 'size': 320},
-                    'padding': {'unit': 'px', 'top': '40', 'right': '32', 'bottom': '40', 'left': '32'},
+                    'content_width': 'full',
+                    'width': {'size': 32, 'unit': '%'},
+                    'width_tablet': {'size': 48, 'unit': '%'},
+                    'width_mobile': {'size': 100, 'unit': '%'},
+                    'min_height': {'size': 280, 'unit': 'px'},
+                    'flex_direction': 'column',
+                    'flex_justify_content': 'flex-end',
+                    'padding': {'top': '0', 'right': '0', 'bottom': '0', 'left': '0', 'unit': 'px', 'isLinked': True},
+                    'border_radius': {'top': '8', 'right': '8', 'bottom': '8', 'left': '8', 'unit': 'px', 'isLinked': True},
+                    'overflow': 'hidden',
                     'background_background': 'classic',
-                    'background_color': 'rgba(255,255,255,0.03)',
-                    'border_radius': {'unit': 'px', 'size': 4},
-                    'border_border': 'solid',
-                    'border_width': {'unit': 'px', 'top': '1', 'right': '1', 'bottom': '1', 'left': '1'},
-                    'border_color': 'rgba(255,255,255,0.08)',
-                    'flex_direction': 'column'
+                    'background_image': {'url': image_url, 'id': ''},
+                    'background_position': 'center center',
+                    'background_size': 'cover',
+                    'box_shadow_box_shadow_type': 'yes',
+                    'box_shadow_box_shadow': {'horizontal': 0, 'vertical': 10, 'blur': 30, 'spread': 0, 'color': 'rgba(0,0,0,0.3)'}
                 },
-                'elements': [
-                    {
-                        'id': self._generate_id(),
-                        'elType': 'container',
-                        'settings': {
-                            'width': {'unit': 'px', 'size': 56},
-                            'height': {'unit': 'px', 'size': 56},
-                            'flex_justify_content': 'center',
-                            'flex_align_items': 'center',
-                            'background_background': 'classic',
-                            'background_color': 'rgba(201,168,124,0.15)',
-                            'border_radius': {'unit': 'px', 'size': 4}
-                        },
-                        'elements': [{
+                'elements': [{
+                    'id': self._generate_id(),
+                    'elType': 'container',
+                    'settings': {
+                        'content_width': 'full',
+                        'padding': {'top': '100', 'right': '24', 'bottom': '24', 'left': '24', 'unit': 'px', 'isLinked': False},
+                        'background_background': 'gradient',
+                        'background_color': 'transparent',
+                        'background_color_b': 'rgba(10,10,15,0.9)',
+                        'background_gradient_type': 'linear',
+                        'background_gradient_angle': {'size': 180, 'unit': 'deg'}
+                    },
+                    'elements': [
+                        {
                             'id': self._generate_id(),
                             'elType': 'widget',
-                            'widgetType': 'icon',
+                            'widgetType': 'heading',
                             'settings': {
-                                'selected_icon': {'value': service.get('icon', 'fas fa-star'), 'library': 'fa-solid'},
-                                'primary_color': colors['primary'],
-                                'icon_size': {'unit': 'px', 'size': 24}
+                                'title': service.get('title', 'Feature'),
+                                'header_size': 'h4',
+                                'title_color': '#ffffff',
+                                'typography_typography': 'custom',
+                                'typography_font_family': 'Montserrat',
+                                'typography_font_size': {'size': 20, 'unit': 'px'},
+                                'typography_font_weight': '600'
                             }
-                        }]
-                    },
-                    {
-                        'id': self._generate_id(),
-                        'elType': 'widget',
-                        'widgetType': 'heading',
-                        'settings': {
-                            'title': service.get('title', 'Feature'),
-                            'header_size': 'h4',
-                            'title_color': '#ffffff',
-                            'typography_typography': 'custom',
-                            'typography_font_size': {'unit': 'px', 'size': 20},
-                            'typography_font_weight': '500',
-                            '_margin': {'unit': 'px', 'top': '24', 'right': '0', 'bottom': '12', 'left': '0'}
+                        },
+                        {
+                            'id': self._generate_id(),
+                            'elType': 'widget',
+                            'widgetType': 'text-editor',
+                            'settings': {
+                                'editor': f'<p style="color: rgba(255,255,255,0.7); font-size: 14px; line-height: 1.6; margin-top: 8px;">{service.get("description", "Description")}</p>'
+                            }
                         }
-                    },
-                    {
-                        'id': self._generate_id(),
-                        'elType': 'widget',
-                        'widgetType': 'text-editor',
-                        'settings': {
-                            'editor': f"<p>{service.get('description', 'Description')}</p>",
-                            'text_color': 'rgba(255,255,255,0.6)',
-                            'typography_typography': 'custom',
-                            'typography_font_size': {'unit': 'px', 'size': 15},
-                            'typography_line_height': {'unit': 'em', 'size': 1.7}
-                        }
-                    }
-                ]
+                    ]
+                }]
             })
 
         return {
             'id': self._generate_id(),
             'elType': 'section',
             'settings': {
-                'layout': 'full_width',
-                'content_width': {'unit': 'px', 'size': 1920},
                 'stretch_section': 'section-stretched',
-                'padding': {'unit': 'px', 'top': '0', 'right': '0', 'bottom': '0', 'left': '0'},
-                'margin': {'unit': 'px', 'top': '0', 'right': '0', 'bottom': '0', 'left': '0'},
+                'layout': 'full_width',
+                'content_width': {'size': 1400, 'unit': 'px'},
+                'gap': 'no',
+                'padding': {'top': '100', 'right': '0', 'bottom': '100', 'left': '0', 'unit': 'px', 'isLinked': False},
                 'background_background': 'classic',
                 'background_color': colors['dark']
             },
@@ -824,90 +833,77 @@ class ElementorProGenerator:
                 {
                     'id': self._generate_id(),
                     'elType': 'column',
-                    'settings': {
-                        '_column_size': 100,
-                        'padding': {'unit': 'px', 'top': '0', 'right': '0', 'bottom': '0', 'left': '0'}
-                    },
+                    'settings': {'_column_size': 100},
                     'elements': [
+                        # Section Header
                         {
                             'id': self._generate_id(),
                             'elType': 'container',
                             'settings': {
                                 'content_width': 'boxed',
-                                'boxed_width': {'unit': 'px', 'size': 1400},
+                                'boxed_width': {'size': 1400, 'unit': 'px'},
                                 'flex_direction': 'column',
-                                'padding': {'unit': 'px', 'top': '100', 'right': '40', 'bottom': '100', 'left': '40'}
+                                'flex_align_items': 'center',
+                                'padding': {'top': '0', 'right': '40', 'bottom': '60', 'left': '40', 'unit': 'px', 'isLinked': False}
                             },
                             'elements': [
-                                # Section header
                                 {
                                     'id': self._generate_id(),
-                                    'elType': 'container',
+                                    'elType': 'widget',
+                                    'widgetType': 'heading',
                                     'settings': {
-                                        'content_width': 'boxed',
-                                        'boxed_width': {'unit': 'px', 'size': 700},
-                                        'flex_direction': 'column',
-                                        'flex_align_items': 'center',
-                                        '_margin': {'unit': 'px', 'top': '0', 'right': '0', 'bottom': '60', 'left': '0'}
-                                    },
-                                    'elements': [
-                                        {
-                                            'id': self._generate_id(),
-                                            'elType': 'widget',
-                                            'widgetType': 'text-editor',
-                                            'settings': {
-                                                'editor': f'<p style="text-align: center; text-transform: uppercase; letter-spacing: 3px;">{section_tagline}</p>',
-                                                'align': 'center',
-                                                'text_color': colors['primary'],
-                                                'typography_typography': 'custom',
-                                                'typography_font_size': {'unit': 'px', 'size': 12},
-                                                'typography_font_weight': '500',
-                                                '_margin': {'unit': 'px', 'top': '0', 'right': '0', 'bottom': '20', 'left': '0'}
-                                            }
-                                        },
-                                        {
-                                            'id': self._generate_id(),
-                                            'elType': 'widget',
-                                            'widgetType': 'heading',
-                                            'settings': {
-                                                'title': section_title,
-                                                'header_size': 'h2',
-                                                'align': 'center',
-                                                'title_color': '#ffffff',
-                                                'typography_typography': 'custom',
-                                                'typography_font_size': {'unit': 'px', 'size': 42},
-                                                'typography_font_weight': '300',
-                                                'typography_line_height': {'unit': 'em', 'size': 1.2}
-                                            }
-                                        },
-                                        {
-                                            'id': self._generate_id(),
-                                            'elType': 'widget',
-                                            'widgetType': 'text-editor',
-                                            'settings': {
-                                                'editor': f'<p style="text-align: center;">{section_subtitle}</p>',
-                                                'align': 'center',
-                                                'text_color': 'rgba(255,255,255,0.6)',
-                                                'typography_typography': 'custom',
-                                                'typography_font_size': {'unit': 'px', 'size': 17},
-                                                '_margin': {'unit': 'px', 'top': '20', 'right': '0', 'bottom': '0', 'left': '0'}
-                                            }
-                                        }
-                                    ]
+                                        'title': section_tagline,
+                                        'align': 'center',
+                                        'title_color': colors['primary'],
+                                        'typography_typography': 'custom',
+                                        'typography_font_family': 'Montserrat',
+                                        'typography_font_size': {'size': 13, 'unit': 'px'},
+                                        'typography_font_weight': '500',
+                                        'typography_letter_spacing': {'size': 4, 'unit': 'px'}
+                                    }
                                 },
-                                # Cards grid
                                 {
                                     'id': self._generate_id(),
-                                    'elType': 'container',
+                                    'elType': 'widget',
+                                    'widgetType': 'heading',
                                     'settings': {
-                                        'flex_direction': 'row',
-                                        'flex_wrap': 'wrap',
-                                        'flex_justify_content': 'center',
-                                        'flex_gap': {'unit': 'px', 'size': 24}
-                                    },
-                                    'elements': service_cards
+                                        'title': section_title,
+                                        'header_size': 'h2',
+                                        'align': 'center',
+                                        'title_color': '#ffffff',
+                                        'typography_typography': 'custom',
+                                        'typography_font_family': 'Montserrat',
+                                        'typography_font_size': {'size': 48, 'unit': 'px'},
+                                        'typography_font_weight': '300',
+                                        'typography_letter_spacing': {'size': 1, 'unit': 'px'},
+                                        '_margin': {'top': '16', 'right': '0', 'bottom': '0', 'left': '0', 'unit': 'px', 'isLinked': False}
+                                    }
+                                },
+                                {
+                                    'id': self._generate_id(),
+                                    'elType': 'widget',
+                                    'widgetType': 'text-editor',
+                                    'settings': {
+                                        'editor': f'<p style="text-align: center; color: rgba(255,255,255,0.5); font-size: 16px; max-width: 600px; line-height: 1.7;">{section_subtitle}</p>',
+                                        '_margin': {'top': '20', 'right': '0', 'bottom': '0', 'left': '0', 'unit': 'px', 'isLinked': False}
+                                    }
                                 }
                             ]
+                        },
+                        # Cards Grid - 3 per row using percentage widths
+                        {
+                            'id': self._generate_id(),
+                            'elType': 'container',
+                            'settings': {
+                                'content_width': 'boxed',
+                                'boxed_width': {'size': 1400, 'unit': 'px'},
+                                'flex_direction': 'row',
+                                'flex_wrap': 'wrap',
+                                'flex_justify_content': 'space-between',
+                                'flex_gap': {'size': 24, 'unit': 'px', 'column': '24', 'row': '24'},
+                                'padding': {'top': '0', 'right': '40', 'bottom': '0', 'left': '40', 'unit': 'px', 'isLinked': False}
+                            },
+                            'elements': service_cards
                         }
                     ]
                 }

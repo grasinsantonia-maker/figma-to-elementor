@@ -1,0 +1,2515 @@
+[
+  {
+    "elType": "section",
+    "elements": [
+      {
+        "elType": "column",
+        "elements": [
+          {
+            "elType": "container",
+            "elements": [
+              {
+                "elType": "widget",
+                "id": "6xprfcs",
+                "settings": {
+                  "header_size": "h4",
+                  "title": "Brand",
+                  "title_color": "#c9a87c",
+                  "typography_font_size": {
+                    "size": 28,
+                    "unit": "px"
+                  },
+                  "typography_font_weight": "300",
+                  "typography_letter_spacing": {
+                    "size": 2,
+                    "unit": "px"
+                  },
+                  "typography_typography": "custom"
+                },
+                "widgetType": "heading"
+              },
+              {
+                "elType": "container",
+                "elements": [
+                  {
+                    "elType": "widget",
+                    "id": "ihupb6t",
+                    "settings": {
+                      "header_size": "span",
+                      "title": "Buy",
+                      "title_color": "#ffffff",
+                      "typography_font_size": {
+                        "size": 13,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "400",
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "heading"
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "jmukwb9",
+                    "settings": {
+                      "header_size": "span",
+                      "title": "Rent",
+                      "title_color": "#ffffff",
+                      "typography_font_size": {
+                        "size": 13,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "400",
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "heading"
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "9tao4wx",
+                    "settings": {
+                      "header_size": "span",
+                      "title": "Sell",
+                      "title_color": "#ffffff",
+                      "typography_font_size": {
+                        "size": 13,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "400",
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "heading"
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "ca77hlm",
+                    "settings": {
+                      "header_size": "span",
+                      "title": "Off-Plan",
+                      "title_color": "#ffffff",
+                      "typography_font_size": {
+                        "size": 13,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "400",
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "heading"
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "raugnln",
+                    "settings": {
+                      "header_size": "span",
+                      "title": "Catalogs",
+                      "title_color": "#ffffff",
+                      "typography_font_size": {
+                        "size": 13,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "400",
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "heading"
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "ryifrzy",
+                    "settings": {
+                      "header_size": "span",
+                      "title": "Agents",
+                      "title_color": "#ffffff",
+                      "typography_font_size": {
+                        "size": 13,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "400",
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "heading"
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "tpwxsap",
+                    "settings": {
+                      "header_size": "span",
+                      "title": "About",
+                      "title_color": "#ffffff",
+                      "typography_font_size": {
+                        "size": 13,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "400",
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "heading"
+                  }
+                ],
+                "id": "u2eak5h",
+                "settings": {
+                  "content_width": "full",
+                  "flex_align_items": "center",
+                  "flex_direction": "row",
+                  "flex_gap": {
+                    "size": 35,
+                    "unit": "px"
+                  },
+                  "flex_justify_content": "center"
+                }
+              },
+              {
+                "elType": "container",
+                "elements": [
+                  {
+                    "elType": "widget",
+                    "id": "n5jewmj",
+                    "settings": {
+                      "header_size": "span",
+                      "title": "FOLLOW US",
+                      "title_color": "#ffffff",
+                      "typography_font_size": {
+                        "size": 11,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "500",
+                      "typography_letter_spacing": {
+                        "size": 1,
+                        "unit": "px"
+                      },
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "heading"
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "3eqtkv0",
+                    "settings": {
+                      "header_size": "span",
+                      "title": "CALL US",
+                      "title_color": "#ffffff",
+                      "typography_font_size": {
+                        "size": 11,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "500",
+                      "typography_letter_spacing": {
+                        "size": 1,
+                        "unit": "px"
+                      },
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "heading"
+                  }
+                ],
+                "id": "z9ed4g7",
+                "settings": {
+                  "flex_direction": "row",
+                  "flex_gap": {
+                    "size": 25,
+                    "unit": "px"
+                  }
+                }
+              }
+            ],
+            "id": "9go53o4",
+            "settings": {
+              "content_width": "full",
+              "flex_align_items": "center",
+              "flex_direction": "row",
+              "flex_justify_content": "space-between",
+              "padding": {
+                "bottom": "30",
+                "left": "80",
+                "right": "80",
+                "top": "30",
+                "unit": "px"
+              }
+            }
+          },
+          {
+            "elType": "container",
+            "elements": [
+              {
+                "elType": "container",
+                "elements": [
+                  {
+                    "elType": "widget",
+                    "id": "aezpmdl",
+                    "settings": {
+                      "align": "left",
+                      "header_size": "h1",
+                      "title": "INVEST IN DUBAI REAL ESTATE WITH",
+                      "title_color": "#ffffff",
+                      "typography_font_size": {
+                        "size": 56,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "300",
+                      "typography_line_height": {
+                        "size": 1.1,
+                        "unit": "em"
+                      },
+                      "typography_text_transform": "uppercase",
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "heading"
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "pwthzpa",
+                    "settings": {
+                      "_margin": {
+                        "bottom": "30",
+                        "left": "0",
+                        "right": "0",
+                        "top": "0",
+                        "unit": "px"
+                      },
+                      "align": "left",
+                      "header_size": "h1",
+                      "title": "BRAND",
+                      "title_color": "#c9a87c",
+                      "typography_font_size": {
+                        "size": 56,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "300",
+                      "typography_line_height": {
+                        "size": 1.1,
+                        "unit": "em"
+                      },
+                      "typography_text_transform": "uppercase",
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "heading"
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "0bs4r4x",
+                    "settings": {
+                      "_margin": {
+                        "bottom": "40",
+                        "left": "0",
+                        "right": "0",
+                        "top": "0",
+                        "unit": "px"
+                      },
+                      "editor": "<p>We bring Due Diligence at Your service</p>",
+                      "text_color": "rgba(255,255,255,0.7)",
+                      "typography_font_size": {
+                        "size": 16,
+                        "unit": "px"
+                      },
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "text-editor"
+                  },
+                  {
+                    "elType": "container",
+                    "elements": [
+                      {
+                        "elType": "widget",
+                        "id": "bkwtct2",
+                        "settings": {
+                          "background_color": "#c9a87c",
+                          "border_radius": {
+                            "size": 0,
+                            "unit": "px"
+                          },
+                          "button_padding": {
+                            "bottom": "18",
+                            "left": "50",
+                            "right": "50",
+                            "top": "18",
+                            "unit": "px"
+                          },
+                          "button_text_color": "#1a1a1a",
+                          "text": "Leave a request",
+                          "typography_font_size": {
+                            "size": 14,
+                            "unit": "px"
+                          },
+                          "typography_font_weight": "500",
+                          "typography_typography": "custom"
+                        },
+                        "widgetType": "button"
+                      },
+                      {
+                        "elType": "widget",
+                        "id": "5fd1wmu",
+                        "settings": {
+                          "background_color": "transparent",
+                          "border_border": "solid",
+                          "border_color": "#c9a87c",
+                          "border_radius": {
+                            "size": 0,
+                            "unit": "px"
+                          },
+                          "border_width": {
+                            "bottom": "1",
+                            "left": "1",
+                            "right": "1",
+                            "top": "1",
+                            "unit": "px"
+                          },
+                          "button_padding": {
+                            "bottom": "18",
+                            "left": "50",
+                            "right": "50",
+                            "top": "18",
+                            "unit": "px"
+                          },
+                          "button_text_color": "#c9a87c",
+                          "text": "Already an owner?",
+                          "typography_font_size": {
+                            "size": 14,
+                            "unit": "px"
+                          },
+                          "typography_font_weight": "500",
+                          "typography_typography": "custom"
+                        },
+                        "widgetType": "button"
+                      }
+                    ],
+                    "id": "kknd4gw",
+                    "settings": {
+                      "flex_direction": "column",
+                      "flex_gap": {
+                        "size": 15,
+                        "unit": "px"
+                      }
+                    }
+                  }
+                ],
+                "id": "lyhyl3k",
+                "settings": {
+                  "flex_align_items": "flex-start",
+                  "flex_direction": "column",
+                  "width": {
+                    "size": 55,
+                    "unit": "%"
+                  }
+                }
+              },
+              {
+                "elType": "container",
+                "elements": [
+                  {
+                    "elType": "container",
+                    "elements": [
+                      {
+                        "elType": "widget",
+                        "id": "oqi08t0",
+                        "settings": {
+                          "background_color": "#c9a87c",
+                          "border_radius": {
+                            "size": 30,
+                            "unit": "px"
+                          },
+                          "button_padding": {
+                            "bottom": "14",
+                            "left": "32",
+                            "right": "32",
+                            "top": "14",
+                            "unit": "px"
+                          },
+                          "button_text_color": "#1a1a2e",
+                          "text": "Primary",
+                          "typography_font_size": {
+                            "size": 14,
+                            "unit": "px"
+                          },
+                          "typography_font_weight": "500",
+                          "typography_typography": "custom"
+                        },
+                        "widgetType": "button"
+                      },
+                      {
+                        "elType": "widget",
+                        "id": "ta92j69",
+                        "settings": {
+                          "background_color": "transparent",
+                          "border_radius": {
+                            "size": 30,
+                            "unit": "px"
+                          },
+                          "button_padding": {
+                            "bottom": "14",
+                            "left": "32",
+                            "right": "32",
+                            "top": "14",
+                            "unit": "px"
+                          },
+                          "button_text_color": "#666666",
+                          "text": "Secondary",
+                          "typography_font_size": {
+                            "size": 14,
+                            "unit": "px"
+                          },
+                          "typography_font_weight": "500",
+                          "typography_typography": "custom"
+                        },
+                        "widgetType": "button"
+                      }
+                    ],
+                    "id": "7docz41",
+                    "settings": {
+                      "_margin": {
+                        "bottom": "30",
+                        "left": "0",
+                        "right": "0",
+                        "top": "0",
+                        "unit": "px"
+                      },
+                      "flex_direction": "row",
+                      "flex_gap": {
+                        "size": 0,
+                        "unit": "px"
+                      }
+                    }
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "d89tmtq",
+                    "settings": {
+                      "editor": "<p style=\"margin-bottom: 8px;\">Property type</p>",
+                      "text_color": "#999999",
+                      "typography_font_size": {
+                        "size": 13,
+                        "unit": "px"
+                      },
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "text-editor"
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "a51kfnm",
+                    "settings": {
+                      "_margin": {
+                        "bottom": "24",
+                        "left": "0",
+                        "right": "0",
+                        "top": "0",
+                        "unit": "px"
+                      },
+                      "editor": "<p style=\"padding: 14px 0; border-bottom: 1px solid #e5e5e5; cursor: pointer;\">Property type <span style=\"float: right;\">\u25be</span></p>",
+                      "text_color": "#1a1a2e",
+                      "typography_font_size": {
+                        "size": 15,
+                        "unit": "px"
+                      },
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "text-editor"
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "y1p9gp5",
+                    "settings": {
+                      "editor": "<p style=\"margin-bottom: 8px;\">Bedrooms</p>",
+                      "text_color": "#999999",
+                      "typography_font_size": {
+                        "size": 13,
+                        "unit": "px"
+                      },
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "text-editor"
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "31iwy0g",
+                    "settings": {
+                      "_margin": {
+                        "bottom": "24",
+                        "left": "0",
+                        "right": "0",
+                        "top": "0",
+                        "unit": "px"
+                      },
+                      "editor": "<p style=\"padding: 14px 0; border-bottom: 1px solid #e5e5e5; cursor: pointer;\">Bedrooms <span style=\"float: right;\">\u25be</span></p>",
+                      "text_color": "#1a1a2e",
+                      "typography_font_size": {
+                        "size": 15,
+                        "unit": "px"
+                      },
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "text-editor"
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "y5r9p3n",
+                    "settings": {
+                      "editor": "<p style=\"margin-bottom: 12px;\">Currency</p>",
+                      "text_color": "#999999",
+                      "typography_font_size": {
+                        "size": 13,
+                        "unit": "px"
+                      },
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "text-editor"
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "9pjxuk1",
+                    "settings": {
+                      "_margin": {
+                        "bottom": "10",
+                        "left": "0",
+                        "right": "0",
+                        "top": "0",
+                        "unit": "px"
+                      },
+                      "editor": "<p style=\"display: flex; gap: 24px; margin-bottom: 20px;\"><span style=\"color: #999; cursor: pointer;\">GBP</span><span style=\"color: #999; cursor: pointer;\">CNY</span><span style=\"color: #999; cursor: pointer;\">EUR</span><span style=\"color: #1a1a2e; cursor: pointer;\">AED</span><span style=\"color: #999; cursor: pointer;\">USD</span></p>",
+                      "typography_font_size": {
+                        "size": 14,
+                        "unit": "px"
+                      },
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "text-editor"
+                  },
+                  {
+                    "elType": "container",
+                    "elements": [
+                      {
+                        "elType": "widget",
+                        "id": "t0aonjv",
+                        "settings": {
+                          "editor": "<p style=\"padding: 14px 16px; background: #f5f5f5; border-radius: 4px;\">Min 40 000</p>",
+                          "text_color": "#1a1a2e",
+                          "typography_font_size": {
+                            "size": 14,
+                            "unit": "px"
+                          },
+                          "typography_typography": "custom"
+                        },
+                        "widgetType": "text-editor"
+                      },
+                      {
+                        "elType": "widget",
+                        "id": "n6htlsf",
+                        "settings": {
+                          "editor": "<p style=\"padding: 14px 16px; background: #f5f5f5; border-radius: 4px;\">Max 150 000 000</p>",
+                          "text_color": "#1a1a2e",
+                          "typography_font_size": {
+                            "size": 14,
+                            "unit": "px"
+                          },
+                          "typography_typography": "custom"
+                        },
+                        "widgetType": "text-editor"
+                      }
+                    ],
+                    "id": "syv96y8",
+                    "settings": {
+                      "_margin": {
+                        "bottom": "30",
+                        "left": "0",
+                        "right": "0",
+                        "top": "0",
+                        "unit": "px"
+                      },
+                      "flex_direction": "row",
+                      "flex_gap": {
+                        "size": 20,
+                        "unit": "px"
+                      }
+                    }
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "pyzdi09",
+                    "settings": {
+                      "_element_width": "full",
+                      "align": "stretch",
+                      "background_color": "#c9a87c",
+                      "border_radius": {
+                        "size": 0,
+                        "unit": "px"
+                      },
+                      "button_padding": {
+                        "bottom": "18",
+                        "left": "0",
+                        "right": "0",
+                        "top": "18",
+                        "unit": "px"
+                      },
+                      "button_text_color": "#1a1a2e",
+                      "link": {
+                        "url": "#search"
+                      },
+                      "text": "Show 81 projects",
+                      "typography_font_size": {
+                        "size": 15,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "500",
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "button"
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "haq12og",
+                    "settings": {
+                      "_element_width": "full",
+                      "_margin": {
+                        "bottom": "0",
+                        "left": "0",
+                        "right": "0",
+                        "top": "12",
+                        "unit": "px"
+                      },
+                      "align": "stretch",
+                      "background_color": "#ffffff",
+                      "border_border": "solid",
+                      "border_color": "#e5e5e5",
+                      "border_radius": {
+                        "size": 0,
+                        "unit": "px"
+                      },
+                      "border_width": {
+                        "bottom": "1",
+                        "left": "1",
+                        "right": "1",
+                        "top": "1",
+                        "unit": "px"
+                      },
+                      "button_padding": {
+                        "bottom": "18",
+                        "left": "0",
+                        "right": "0",
+                        "top": "18",
+                        "unit": "px"
+                      },
+                      "button_text_color": "#1a1a2e",
+                      "link": {
+                        "url": "#map"
+                      },
+                      "text": "Properties on map",
+                      "typography_font_size": {
+                        "size": 15,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "500",
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "button"
+                  }
+                ],
+                "id": "20p92cd",
+                "settings": {
+                  "background_background": "classic",
+                  "background_color": "#ffffff",
+                  "border_radius": {
+                    "size": 4,
+                    "unit": "px"
+                  },
+                  "box_shadow_box_shadow": {
+                    "blur": 50,
+                    "color": "rgba(0,0,0,0.2)",
+                    "horizontal": 0,
+                    "spread": 0,
+                    "vertical": 15
+                  },
+                  "box_shadow_box_shadow_type": "yes",
+                  "flex_direction": "column",
+                  "flex_shrink": 0,
+                  "max_width": {
+                    "size": 440,
+                    "unit": "px"
+                  },
+                  "min_width": {
+                    "size": 380,
+                    "unit": "px"
+                  },
+                  "padding": {
+                    "bottom": "32",
+                    "left": "32",
+                    "right": "32",
+                    "top": "32",
+                    "unit": "px"
+                  },
+                  "width": {
+                    "size": 40,
+                    "unit": "%"
+                  }
+                }
+              }
+            ],
+            "id": "qi08olv",
+            "settings": {
+              "boxed_width": {
+                "size": 1400,
+                "unit": "px"
+              },
+              "content_width": "boxed",
+              "flex_align_items": "center",
+              "flex_direction": "row",
+              "flex_gap": {
+                "size": 80,
+                "unit": "px"
+              },
+              "flex_justify_content": "space-between",
+              "min_height": {
+                "size": 75,
+                "unit": "vh"
+              },
+              "padding": {
+                "bottom": "60",
+                "left": "40",
+                "right": "40",
+                "top": "40",
+                "unit": "px"
+              }
+            }
+          }
+        ],
+        "id": "xi6qyck",
+        "settings": {
+          "_column_size": 100,
+          "padding": {
+            "bottom": "0",
+            "left": "0",
+            "right": "0",
+            "top": "0",
+            "unit": "px"
+          }
+        }
+      }
+    ],
+    "id": "mwowwh4",
+    "settings": {
+      "background_background": "classic",
+      "background_image": {
+        "id": "",
+        "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=80"
+      },
+      "background_overlay_background": "classic",
+      "background_overlay_color": "rgba(0, 0, 0, 0.5)",
+      "background_position": "center center",
+      "background_size": "cover",
+      "column_position": "middle",
+      "content_width": {
+        "size": 1920,
+        "unit": "px"
+      },
+      "custom_height": {
+        "size": 100,
+        "unit": "vh"
+      },
+      "height": "min-height",
+      "layout": "full_width",
+      "margin": {
+        "bottom": "0",
+        "left": "0",
+        "right": "0",
+        "top": "0",
+        "unit": "px"
+      },
+      "padding": {
+        "bottom": "0",
+        "left": "0",
+        "right": "0",
+        "top": "0",
+        "unit": "px"
+      },
+      "stretch_section": "section-stretched"
+    }
+  },
+  {
+    "elType": "section",
+    "elements": [
+      {
+        "elType": "column",
+        "elements": [
+          {
+            "elType": "container",
+            "elements": [
+              {
+                "elType": "widget",
+                "id": "16uws6j",
+                "settings": {
+                  "_margin": {
+                    "bottom": "40",
+                    "left": "0",
+                    "right": "0",
+                    "top": "0",
+                    "unit": "px"
+                  },
+                  "align": "center",
+                  "editor": "<p style=\"text-align: center; text-transform: uppercase; letter-spacing: 2px;\">Partnered with leading developers</p>",
+                  "text_color": "#94a3b8",
+                  "typography_font_size": {
+                    "size": 13,
+                    "unit": "px"
+                  },
+                  "typography_font_weight": "600",
+                  "typography_typography": "custom"
+                },
+                "widgetType": "text-editor"
+              },
+              {
+                "elType": "container",
+                "elements": [
+                  {
+                    "elType": "widget",
+                    "id": "rq48ghp",
+                    "settings": {
+                      "header_size": "h5",
+                      "title": "Emirates NBD",
+                      "title_color": "#94a3b8",
+                      "typography_font_size": {
+                        "size": 20,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "700",
+                      "typography_letter_spacing": {
+                        "size": 1,
+                        "unit": "px"
+                      },
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "heading"
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "luc5g18",
+                    "settings": {
+                      "header_size": "h5",
+                      "title": "DAMAC",
+                      "title_color": "#94a3b8",
+                      "typography_font_size": {
+                        "size": 20,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "700",
+                      "typography_letter_spacing": {
+                        "size": 1,
+                        "unit": "px"
+                      },
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "heading"
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "sfhxux5",
+                    "settings": {
+                      "header_size": "h5",
+                      "title": "Emaar",
+                      "title_color": "#94a3b8",
+                      "typography_font_size": {
+                        "size": 20,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "700",
+                      "typography_letter_spacing": {
+                        "size": 1,
+                        "unit": "px"
+                      },
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "heading"
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "8vjf1h3",
+                    "settings": {
+                      "header_size": "h5",
+                      "title": "Nakheel",
+                      "title_color": "#94a3b8",
+                      "typography_font_size": {
+                        "size": 20,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "700",
+                      "typography_letter_spacing": {
+                        "size": 1,
+                        "unit": "px"
+                      },
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "heading"
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "dtot4ih",
+                    "settings": {
+                      "header_size": "h5",
+                      "title": "Meraas",
+                      "title_color": "#94a3b8",
+                      "typography_font_size": {
+                        "size": 20,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "700",
+                      "typography_letter_spacing": {
+                        "size": 1,
+                        "unit": "px"
+                      },
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "heading"
+                  }
+                ],
+                "id": "ntz6nua",
+                "settings": {
+                  "content_width": "full",
+                  "flex_align_items": "center",
+                  "flex_direction": "row",
+                  "flex_gap": {
+                    "size": 80,
+                    "unit": "px"
+                  },
+                  "flex_justify_content": "space-around",
+                  "flex_wrap": "nowrap"
+                }
+              }
+            ],
+            "id": "n6ze1ik",
+            "settings": {
+              "boxed_width": {
+                "size": 1400,
+                "unit": "px"
+              },
+              "content_width": "boxed",
+              "flex_align_items": "center",
+              "flex_direction": "column",
+              "padding": {
+                "bottom": "80",
+                "left": "40",
+                "right": "40",
+                "top": "80",
+                "unit": "px"
+              }
+            }
+          }
+        ],
+        "id": "5anlwqn",
+        "settings": {
+          "_column_size": 100,
+          "padding": {
+            "bottom": "0",
+            "left": "0",
+            "right": "0",
+            "top": "0",
+            "unit": "px"
+          }
+        }
+      }
+    ],
+    "id": "j6ak9kk",
+    "settings": {
+      "background_background": "classic",
+      "background_color": "#ffffff",
+      "content_width": {
+        "size": 1920,
+        "unit": "px"
+      },
+      "layout": "full_width",
+      "margin": {
+        "bottom": "0",
+        "left": "0",
+        "right": "0",
+        "top": "0",
+        "unit": "px"
+      },
+      "padding": {
+        "bottom": "0",
+        "left": "0",
+        "right": "0",
+        "top": "0",
+        "unit": "px"
+      },
+      "stretch_section": "section-stretched"
+    }
+  },
+  {
+    "id": "r5rae6h",
+    "elType": "section",
+    "settings": {
+      "stretch_section": "section-stretched",
+      "layout": "full_width",
+      "content_width": {
+        "size": 1400,
+        "unit": "px"
+      },
+      "gap": "no",
+      "padding": {
+        "top": "100",
+        "right": "0",
+        "bottom": "100",
+        "left": "0",
+        "unit": "px",
+        "isLinked": false
+      },
+      "background_background": "classic",
+      "background_color": "#0a0a0f"
+    },
+    "elements": [
+      {
+        "id": "v6gtlrv",
+        "elType": "column",
+        "settings": {
+          "_column_size": 100
+        },
+        "elements": [
+          {
+            "id": "mfd88w6",
+            "elType": "container",
+            "settings": {
+              "content_width": "boxed",
+              "boxed_width": {
+                "size": 1400,
+                "unit": "px"
+              },
+              "flex_direction": "column",
+              "flex_align_items": "center",
+              "padding": {
+                "top": "0",
+                "right": "40",
+                "bottom": "60",
+                "left": "40",
+                "unit": "px",
+                "isLinked": false
+              }
+            },
+            "elements": [
+              {
+                "id": "divgx3i",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "WHY CHOOSE US",
+                  "align": "center",
+                  "title_color": "#c9a962",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Montserrat",
+                  "typography_font_size": {
+                    "size": 13,
+                    "unit": "px"
+                  },
+                  "typography_font_weight": "500",
+                  "typography_letter_spacing": {
+                    "size": 4,
+                    "unit": "px"
+                  }
+                }
+              },
+              {
+                "id": "vyef079",
+                "elType": "widget",
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Our Services",
+                  "header_size": "h2",
+                  "align": "center",
+                  "title_color": "#FFFFFF",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Montserrat",
+                  "typography_font_size": {
+                    "size": 48,
+                    "unit": "px"
+                  },
+                  "typography_font_weight": "300",
+                  "typography_letter_spacing": {
+                    "size": 1,
+                    "unit": "px"
+                  },
+                  "_margin": {
+                    "top": "16",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "unit": "px",
+                    "isLinked": false
+                  }
+                }
+              },
+              {
+                "id": "07ah2u6",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"text-align: center; color: rgba(255,255,255,0.5); font-size: 16px; max-width: 600px; line-height: 1.7;\">Comprehensive real estate solutions tailored to your investment goals in Dubai's dynamic property market.</p>",
+                  "_margin": {
+                    "top": "20",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "unit": "px",
+                    "isLinked": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "c57jqqa",
+            "elType": "container",
+            "settings": {
+              "content_width": "boxed",
+              "boxed_width": {
+                "size": 1400,
+                "unit": "px"
+              },
+              "flex_direction": "row",
+              "flex_wrap": "wrap",
+              "flex_justify_content": "space-between",
+              "flex_gap": {
+                "size": 24,
+                "unit": "px",
+                "column": "24",
+                "row": "24"
+              },
+              "padding": {
+                "top": "0",
+                "right": "40",
+                "bottom": "0",
+                "left": "40",
+                "unit": "px",
+                "isLinked": false
+              }
+            },
+            "elements": [
+              {
+                "id": "abr4thb",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "size": 32,
+                    "unit": "%"
+                  },
+                  "width_tablet": {
+                    "size": 48,
+                    "unit": "%"
+                  },
+                  "width_mobile": {
+                    "size": 100,
+                    "unit": "%"
+                  },
+                  "min_height": {
+                    "size": 280,
+                    "unit": "px"
+                  },
+                  "flex_direction": "column",
+                  "flex_justify_content": "flex-end",
+                  "padding": {
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "unit": "px",
+                    "isLinked": true
+                  },
+                  "border_radius": {
+                    "top": "8",
+                    "right": "8",
+                    "bottom": "8",
+                    "left": "8",
+                    "unit": "px",
+                    "isLinked": true
+                  },
+                  "overflow": "hidden",
+                  "background_background": "classic",
+                  "background_image": {
+                    "url": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
+                    "id": ""
+                  },
+                  "background_position": "center center",
+                  "background_size": "cover",
+                  "box_shadow_box_shadow_type": "yes",
+                  "box_shadow_box_shadow": {
+                    "horizontal": 0,
+                    "vertical": 10,
+                    "blur": 30,
+                    "spread": 0,
+                    "color": "rgba(0,0,0,0.3)"
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "csnwzak",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "padding": {
+                        "top": "100",
+                        "right": "24",
+                        "bottom": "24",
+                        "left": "24",
+                        "unit": "px",
+                        "isLinked": false
+                      },
+                      "background_background": "gradient",
+                      "background_color": "transparent",
+                      "background_color_b": "rgba(10,10,15,0.9)",
+                      "background_gradient_type": "linear",
+                      "background_gradient_angle": {
+                        "size": 180,
+                        "unit": "deg"
+                      }
+                    },
+                    "elements": [
+                      {
+                        "id": "c5106ff",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Property Search",
+                          "header_size": "h4",
+                          "title_color": "#FFFFFF",
+                          "typography_typography": "custom",
+                          "typography_font_family": "Montserrat",
+                          "typography_font_size": {
+                            "size": 20,
+                            "unit": "px"
+                          },
+                          "typography_font_weight": "600"
+                        }
+                      },
+                      {
+                        "id": "bgj2dqp",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color: rgba(255,255,255,0.7); font-size: 14px; line-height: 1.6; margin-top: 8px;\">Access exclusive listings across Dubai's premium neighborhoods</p>"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "0ff15mt",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "size": 32,
+                    "unit": "%"
+                  },
+                  "width_tablet": {
+                    "size": 48,
+                    "unit": "%"
+                  },
+                  "width_mobile": {
+                    "size": 100,
+                    "unit": "%"
+                  },
+                  "min_height": {
+                    "size": 280,
+                    "unit": "px"
+                  },
+                  "flex_direction": "column",
+                  "flex_justify_content": "flex-end",
+                  "padding": {
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "unit": "px",
+                    "isLinked": true
+                  },
+                  "border_radius": {
+                    "top": "8",
+                    "right": "8",
+                    "bottom": "8",
+                    "left": "8",
+                    "unit": "px",
+                    "isLinked": true
+                  },
+                  "overflow": "hidden",
+                  "background_background": "classic",
+                  "background_image": {
+                    "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80",
+                    "id": ""
+                  },
+                  "background_position": "center center",
+                  "background_size": "cover",
+                  "box_shadow_box_shadow_type": "yes",
+                  "box_shadow_box_shadow": {
+                    "horizontal": 0,
+                    "vertical": 10,
+                    "blur": 30,
+                    "spread": 0,
+                    "color": "rgba(0,0,0,0.3)"
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "k1aytdv",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "padding": {
+                        "top": "100",
+                        "right": "24",
+                        "bottom": "24",
+                        "left": "24",
+                        "unit": "px",
+                        "isLinked": false
+                      },
+                      "background_background": "gradient",
+                      "background_color": "transparent",
+                      "background_color_b": "rgba(10,10,15,0.9)",
+                      "background_gradient_type": "linear",
+                      "background_gradient_angle": {
+                        "size": 180,
+                        "unit": "deg"
+                      }
+                    },
+                    "elements": [
+                      {
+                        "id": "ykdvhed",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Investment Advisory",
+                          "header_size": "h4",
+                          "title_color": "#FFFFFF",
+                          "typography_typography": "custom",
+                          "typography_font_family": "Montserrat",
+                          "typography_font_size": {
+                            "size": 20,
+                            "unit": "px"
+                          },
+                          "typography_font_weight": "600"
+                        }
+                      },
+                      {
+                        "id": "d44k0at",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color: rgba(255,255,255,0.7); font-size: 14px; line-height: 1.6; margin-top: 8px;\">Expert guidance on high-yield real estate opportunities</p>"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ua9hej6",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "size": 32,
+                    "unit": "%"
+                  },
+                  "width_tablet": {
+                    "size": 48,
+                    "unit": "%"
+                  },
+                  "width_mobile": {
+                    "size": 100,
+                    "unit": "%"
+                  },
+                  "min_height": {
+                    "size": 280,
+                    "unit": "px"
+                  },
+                  "flex_direction": "column",
+                  "flex_justify_content": "flex-end",
+                  "padding": {
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "unit": "px",
+                    "isLinked": true
+                  },
+                  "border_radius": {
+                    "top": "8",
+                    "right": "8",
+                    "bottom": "8",
+                    "left": "8",
+                    "unit": "px",
+                    "isLinked": true
+                  },
+                  "overflow": "hidden",
+                  "background_background": "classic",
+                  "background_image": {
+                    "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+                    "id": ""
+                  },
+                  "background_position": "center center",
+                  "background_size": "cover",
+                  "box_shadow_box_shadow_type": "yes",
+                  "box_shadow_box_shadow": {
+                    "horizontal": 0,
+                    "vertical": 10,
+                    "blur": 30,
+                    "spread": 0,
+                    "color": "rgba(0,0,0,0.3)"
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "hoqp9nw",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "padding": {
+                        "top": "100",
+                        "right": "24",
+                        "bottom": "24",
+                        "left": "24",
+                        "unit": "px",
+                        "isLinked": false
+                      },
+                      "background_background": "gradient",
+                      "background_color": "transparent",
+                      "background_color_b": "rgba(10,10,15,0.9)",
+                      "background_gradient_type": "linear",
+                      "background_gradient_angle": {
+                        "size": 180,
+                        "unit": "deg"
+                      }
+                    },
+                    "elements": [
+                      {
+                        "id": "682b7q4",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Property Management",
+                          "header_size": "h4",
+                          "title_color": "#FFFFFF",
+                          "typography_typography": "custom",
+                          "typography_font_family": "Montserrat",
+                          "typography_font_size": {
+                            "size": 20,
+                            "unit": "px"
+                          },
+                          "typography_font_weight": "600"
+                        }
+                      },
+                      {
+                        "id": "jqxrjz1",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color: rgba(255,255,255,0.7); font-size: 14px; line-height: 1.6; margin-top: 8px;\">Full-service management for your real estate portfolio</p>"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "nw88kq0",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "size": 32,
+                    "unit": "%"
+                  },
+                  "width_tablet": {
+                    "size": 48,
+                    "unit": "%"
+                  },
+                  "width_mobile": {
+                    "size": 100,
+                    "unit": "%"
+                  },
+                  "min_height": {
+                    "size": 280,
+                    "unit": "px"
+                  },
+                  "flex_direction": "column",
+                  "flex_justify_content": "flex-end",
+                  "padding": {
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "unit": "px",
+                    "isLinked": true
+                  },
+                  "border_radius": {
+                    "top": "8",
+                    "right": "8",
+                    "bottom": "8",
+                    "left": "8",
+                    "unit": "px",
+                    "isLinked": true
+                  },
+                  "overflow": "hidden",
+                  "background_background": "classic",
+                  "background_image": {
+                    "url": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
+                    "id": ""
+                  },
+                  "background_position": "center center",
+                  "background_size": "cover",
+                  "box_shadow_box_shadow_type": "yes",
+                  "box_shadow_box_shadow": {
+                    "horizontal": 0,
+                    "vertical": 10,
+                    "blur": 30,
+                    "spread": 0,
+                    "color": "rgba(0,0,0,0.3)"
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "9kfnhva",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "padding": {
+                        "top": "100",
+                        "right": "24",
+                        "bottom": "24",
+                        "left": "24",
+                        "unit": "px",
+                        "isLinked": false
+                      },
+                      "background_background": "gradient",
+                      "background_color": "transparent",
+                      "background_color_b": "rgba(10,10,15,0.9)",
+                      "background_gradient_type": "linear",
+                      "background_gradient_angle": {
+                        "size": 180,
+                        "unit": "deg"
+                      }
+                    },
+                    "elements": [
+                      {
+                        "id": "nq2y1ex",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Legal Services",
+                          "header_size": "h4",
+                          "title_color": "#FFFFFF",
+                          "typography_typography": "custom",
+                          "typography_font_family": "Montserrat",
+                          "typography_font_size": {
+                            "size": 20,
+                            "unit": "px"
+                          },
+                          "typography_font_weight": "600"
+                        }
+                      },
+                      {
+                        "id": "jgp0m83",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color: rgba(255,255,255,0.7); font-size: 14px; line-height: 1.6; margin-top: 8px;\">Comprehensive due diligence and transaction support</p>"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "rzeiv4p",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "size": 32,
+                    "unit": "%"
+                  },
+                  "width_tablet": {
+                    "size": 48,
+                    "unit": "%"
+                  },
+                  "width_mobile": {
+                    "size": 100,
+                    "unit": "%"
+                  },
+                  "min_height": {
+                    "size": 280,
+                    "unit": "px"
+                  },
+                  "flex_direction": "column",
+                  "flex_justify_content": "flex-end",
+                  "padding": {
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "unit": "px",
+                    "isLinked": true
+                  },
+                  "border_radius": {
+                    "top": "8",
+                    "right": "8",
+                    "bottom": "8",
+                    "left": "8",
+                    "unit": "px",
+                    "isLinked": true
+                  },
+                  "overflow": "hidden",
+                  "background_background": "classic",
+                  "background_image": {
+                    "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+                    "id": ""
+                  },
+                  "background_position": "center center",
+                  "background_size": "cover",
+                  "box_shadow_box_shadow_type": "yes",
+                  "box_shadow_box_shadow": {
+                    "horizontal": 0,
+                    "vertical": 10,
+                    "blur": 30,
+                    "spread": 0,
+                    "color": "rgba(0,0,0,0.3)"
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "smz4tak",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "padding": {
+                        "top": "100",
+                        "right": "24",
+                        "bottom": "24",
+                        "left": "24",
+                        "unit": "px",
+                        "isLinked": false
+                      },
+                      "background_background": "gradient",
+                      "background_color": "transparent",
+                      "background_color_b": "rgba(10,10,15,0.9)",
+                      "background_gradient_type": "linear",
+                      "background_gradient_angle": {
+                        "size": 180,
+                        "unit": "deg"
+                      }
+                    },
+                    "elements": [
+                      {
+                        "id": "e13sfzs",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Luxury Rentals",
+                          "header_size": "h4",
+                          "title_color": "#FFFFFF",
+                          "typography_typography": "custom",
+                          "typography_font_family": "Montserrat",
+                          "typography_font_size": {
+                            "size": 20,
+                            "unit": "px"
+                          },
+                          "typography_font_weight": "600"
+                        }
+                      },
+                      {
+                        "id": "a5xcl05",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color: rgba(255,255,255,0.7); font-size: 14px; line-height: 1.6; margin-top: 8px;\">Premium furnished apartments and villas for rent</p>"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "9vqb4lp",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "size": 32,
+                    "unit": "%"
+                  },
+                  "width_tablet": {
+                    "size": 48,
+                    "unit": "%"
+                  },
+                  "width_mobile": {
+                    "size": 100,
+                    "unit": "%"
+                  },
+                  "min_height": {
+                    "size": 280,
+                    "unit": "px"
+                  },
+                  "flex_direction": "column",
+                  "flex_justify_content": "flex-end",
+                  "padding": {
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "unit": "px",
+                    "isLinked": true
+                  },
+                  "border_radius": {
+                    "top": "8",
+                    "right": "8",
+                    "bottom": "8",
+                    "left": "8",
+                    "unit": "px",
+                    "isLinked": true
+                  },
+                  "overflow": "hidden",
+                  "background_background": "classic",
+                  "background_image": {
+                    "url": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=80",
+                    "id": ""
+                  },
+                  "background_position": "center center",
+                  "background_size": "cover",
+                  "box_shadow_box_shadow_type": "yes",
+                  "box_shadow_box_shadow": {
+                    "horizontal": 0,
+                    "vertical": 10,
+                    "blur": 30,
+                    "spread": 0,
+                    "color": "rgba(0,0,0,0.3)"
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "wud6zis",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "padding": {
+                        "top": "100",
+                        "right": "24",
+                        "bottom": "24",
+                        "left": "24",
+                        "unit": "px",
+                        "isLinked": false
+                      },
+                      "background_background": "gradient",
+                      "background_color": "transparent",
+                      "background_color_b": "rgba(10,10,15,0.9)",
+                      "background_gradient_type": "linear",
+                      "background_gradient_angle": {
+                        "size": 180,
+                        "unit": "deg"
+                      }
+                    },
+                    "elements": [
+                      {
+                        "id": "ymrq4m6",
+                        "elType": "widget",
+                        "widgetType": "heading",
+                        "settings": {
+                          "title": "Off-Plan Projects",
+                          "header_size": "h4",
+                          "title_color": "#FFFFFF",
+                          "typography_typography": "custom",
+                          "typography_font_family": "Montserrat",
+                          "typography_font_size": {
+                            "size": 20,
+                            "unit": "px"
+                          },
+                          "typography_font_weight": "600"
+                        }
+                      },
+                      {
+                        "id": "a9h6c2u",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color: rgba(255,255,255,0.7); font-size: 14px; line-height: 1.6; margin-top: 8px;\">Early access to Dubai's most anticipated developments</p>"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "elType": "section",
+    "elements": [
+      {
+        "elType": "column",
+        "elements": [
+          {
+            "elType": "container",
+            "elements": [
+              {
+                "elType": "widget",
+                "id": "ba7nn5s",
+                "settings": {
+                  "align": "center",
+                  "header_size": "h2",
+                  "title": "Ready to invest in Dubai?",
+                  "title_color": "#ffffff",
+                  "typography_font_size": {
+                    "size": 52,
+                    "unit": "px"
+                  },
+                  "typography_font_weight": "300",
+                  "typography_letter_spacing": {
+                    "size": 1,
+                    "unit": "px"
+                  },
+                  "typography_typography": "custom"
+                },
+                "widgetType": "heading"
+              },
+              {
+                "elType": "widget",
+                "id": "6bzhoo5",
+                "settings": {
+                  "_margin": {
+                    "bottom": "40",
+                    "left": "0",
+                    "right": "0",
+                    "top": "20",
+                    "unit": "px"
+                  },
+                  "align": "center",
+                  "editor": "<p style=\"text-align: center;\">Schedule a consultation with our expert advisors and discover premium properties tailored to your investment goals.</p>",
+                  "text_color": "rgba(255,255,255,0.8)",
+                  "typography_font_size": {
+                    "size": 20,
+                    "unit": "px"
+                  },
+                  "typography_line_height": {
+                    "size": 1.6,
+                    "unit": "em"
+                  },
+                  "typography_typography": "custom"
+                },
+                "widgetType": "text-editor"
+              },
+              {
+                "elType": "container",
+                "elements": [
+                  {
+                    "elType": "widget",
+                    "id": "jfstpy6",
+                    "settings": {
+                      "background_color": "#c9a87c",
+                      "border_radius": {
+                        "size": 4,
+                        "unit": "px"
+                      },
+                      "button_padding": {
+                        "bottom": "18",
+                        "left": "40",
+                        "right": "40",
+                        "top": "18",
+                        "unit": "px"
+                      },
+                      "button_text_color": "#0a0a0f",
+                      "link": {
+                        "url": "#contact"
+                      },
+                      "text": "Schedule Consultation",
+                      "typography_font_size": {
+                        "size": 16,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "500",
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "button"
+                  },
+                  {
+                    "elType": "widget",
+                    "id": "9x99fkc",
+                    "settings": {
+                      "background_color": "transparent",
+                      "border_border": "solid",
+                      "border_color": "rgba(255,255,255,0.3)",
+                      "border_radius": {
+                        "size": 4,
+                        "unit": "px"
+                      },
+                      "border_width": {
+                        "bottom": "1",
+                        "left": "1",
+                        "right": "1",
+                        "top": "1",
+                        "unit": "px"
+                      },
+                      "button_padding": {
+                        "bottom": "18",
+                        "left": "40",
+                        "right": "40",
+                        "top": "18",
+                        "unit": "px"
+                      },
+                      "button_text_color": "#ffffff",
+                      "link": {
+                        "url": "#properties"
+                      },
+                      "text": "View Properties",
+                      "typography_font_size": {
+                        "size": 16,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "500",
+                      "typography_typography": "custom"
+                    },
+                    "widgetType": "button"
+                  }
+                ],
+                "id": "zu7clp6",
+                "settings": {
+                  "flex_direction": "row",
+                  "flex_gap": {
+                    "size": 20,
+                    "unit": "px"
+                  },
+                  "flex_justify_content": "center"
+                }
+              }
+            ],
+            "id": "mem44e2",
+            "settings": {
+              "boxed_width": {
+                "size": 1000,
+                "unit": "px"
+              },
+              "content_width": "boxed",
+              "flex_align_items": "center",
+              "flex_direction": "column",
+              "padding": {
+                "bottom": "120",
+                "left": "40",
+                "right": "40",
+                "top": "120",
+                "unit": "px"
+              }
+            }
+          }
+        ],
+        "id": "yx46c60",
+        "settings": {
+          "_column_size": 100,
+          "padding": {
+            "bottom": "0",
+            "left": "0",
+            "right": "0",
+            "top": "0",
+            "unit": "px"
+          }
+        }
+      }
+    ],
+    "id": "szcnxzb",
+    "settings": {
+      "background_background": "gradient",
+      "background_color": "#0a0a0f",
+      "background_color_b": "#1a1a2e",
+      "background_gradient_angle": {
+        "size": 135,
+        "unit": "deg"
+      },
+      "background_gradient_type": "linear",
+      "content_width": {
+        "size": 1920,
+        "unit": "px"
+      },
+      "layout": "full_width",
+      "margin": {
+        "bottom": "0",
+        "left": "0",
+        "right": "0",
+        "top": "0",
+        "unit": "px"
+      },
+      "padding": {
+        "bottom": "0",
+        "left": "0",
+        "right": "0",
+        "top": "0",
+        "unit": "px"
+      },
+      "stretch_section": "section-stretched"
+    }
+  },
+  {
+    "id": "mu5gbym",
+    "elType": "section",
+    "settings": {
+      "stretch_section": "section-stretched",
+      "layout": "full_width",
+      "content_width": {
+        "size": 1400,
+        "unit": "px"
+      },
+      "gap": "no",
+      "padding": {
+        "top": "80",
+        "right": "0",
+        "bottom": "50",
+        "left": "0",
+        "unit": "px",
+        "isLinked": false
+      },
+      "background_background": "classic",
+      "background_color": "#0a0a0f",
+      "border_border": "solid",
+      "border_width": {
+        "top": "1",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "unit": "px",
+        "isLinked": false
+      },
+      "border_color": "rgba(255,255,255,0.1)"
+    },
+    "elements": [
+      {
+        "id": "isamjj8",
+        "elType": "column",
+        "settings": {
+          "_column_size": 100
+        },
+        "elements": [
+          {
+            "id": "q68ka3t",
+            "elType": "container",
+            "settings": {
+              "content_width": "boxed",
+              "boxed_width": {
+                "size": 1400,
+                "unit": "px"
+              },
+              "flex_direction": "row",
+              "flex_justify_content": "space-between",
+              "flex_align_items": "flex-start",
+              "flex_wrap": "wrap",
+              "padding": {
+                "top": "0",
+                "right": "40",
+                "bottom": "0",
+                "left": "40",
+                "unit": "px",
+                "isLinked": false
+              }
+            },
+            "elements": [
+              {
+                "id": "4wnzbam",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "size": 180,
+                    "unit": "px"
+                  },
+                  "flex_direction": "column"
+                },
+                "elements": [
+                  {
+                    "id": "div2nej",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "BRAND",
+                      "title_color": "#c9a962",
+                      "typography_typography": "custom",
+                      "typography_font_family": "Montserrat",
+                      "typography_font_size": {
+                        "size": 36,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "300",
+                      "typography_letter_spacing": {
+                        "size": 6,
+                        "unit": "px"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "ll742sr",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "size": 550,
+                    "unit": "px"
+                  },
+                  "flex_direction": "row",
+                  "flex_justify_content": "space-between",
+                  "padding": {
+                    "top": "10",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "unit": "px",
+                    "isLinked": false
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "oxi6yv2",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "width": {
+                        "size": 130,
+                        "unit": "px"
+                      },
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "256ju5o",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color: rgba(255,255,255,0.6); font-size: 14px; margin-bottom: 14px; cursor: pointer; transition: color 0.3s;\">Apartments</p>"
+                        }
+                      },
+                      {
+                        "id": "x6imxaz",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color: rgba(255,255,255,0.6); font-size: 14px; margin-bottom: 14px; cursor: pointer;\">Penthouses</p>"
+                        }
+                      },
+                      {
+                        "id": "6xnxedh",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color: rgba(255,255,255,0.6); font-size: 14px; margin-bottom: 14px; cursor: pointer;\">Villas</p>"
+                        }
+                      },
+                      {
+                        "id": "nmb6wau",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color: rgba(255,255,255,0.6); font-size: 14px; cursor: pointer;\">Townhouses</p>"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "6u0pz1b",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "width": {
+                        "size": 130,
+                        "unit": "px"
+                      },
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "tu8bluw",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color: rgba(255,255,255,0.6); font-size: 14px; margin-bottom: 14px; cursor: pointer;\">Off-Plan</p>"
+                        }
+                      },
+                      {
+                        "id": "loe0cks",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color: rgba(255,255,255,0.6); font-size: 14px; margin-bottom: 14px; cursor: pointer;\">Catalogs</p>"
+                        }
+                      },
+                      {
+                        "id": "a7edqy3",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color: rgba(255,255,255,0.6); font-size: 14px; margin-bottom: 14px; cursor: pointer;\">Area Guides</p>"
+                        }
+                      },
+                      {
+                        "id": "mm8ylmj",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color: rgba(255,255,255,0.6); font-size: 14px; cursor: pointer;\">Sell</p>"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ybuqkcu",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "width": {
+                        "size": 130,
+                        "unit": "px"
+                      },
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "et8z0sy",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color: rgba(255,255,255,0.6); font-size: 14px; margin-bottom: 14px; cursor: pointer;\">Rent</p>"
+                        }
+                      },
+                      {
+                        "id": "otxstt4",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color: rgba(255,255,255,0.6); font-size: 14px; margin-bottom: 14px; cursor: pointer;\">Developers</p>"
+                        }
+                      },
+                      {
+                        "id": "tvlv33h",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color: rgba(255,255,255,0.6); font-size: 14px; margin-bottom: 14px; cursor: pointer;\">AX CORPORATE</p>"
+                        }
+                      },
+                      {
+                        "id": "540yliu",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color: rgba(255,255,255,0.6); font-size: 14px; cursor: pointer;\">Reviews</p>"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "5sbombi",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "width": {
+                        "size": 100,
+                        "unit": "px"
+                      },
+                      "flex_direction": "column"
+                    },
+                    "elements": [
+                      {
+                        "id": "xhz0qwp",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color: rgba(255,255,255,0.6); font-size: 14px; margin-bottom: 14px; cursor: pointer;\">Careers</p>"
+                        }
+                      },
+                      {
+                        "id": "0qsot43",
+                        "elType": "widget",
+                        "widgetType": "text-editor",
+                        "settings": {
+                          "editor": "<p style=\"color: rgba(255,255,255,0.6); font-size: 14px; cursor: pointer;\">Contact Us</p>"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kqshgdp",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "size": 300,
+                    "unit": "px"
+                  },
+                  "flex_direction": "column",
+                  "flex_align_items": "flex-end"
+                },
+                "elements": [
+                  {
+                    "id": "uzspe4w",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "CONTACTS",
+                      "align": "right",
+                      "title_color": "#c9a962",
+                      "typography_typography": "custom",
+                      "typography_font_family": "Montserrat",
+                      "typography_font_size": {
+                        "size": 22,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "300",
+                      "typography_letter_spacing": {
+                        "size": 4,
+                        "unit": "px"
+                      }
+                    }
+                  },
+                  {
+                    "id": "bpivkgh",
+                    "elType": "widget",
+                    "widgetType": "heading",
+                    "settings": {
+                      "title": "Dubai, UAE",
+                      "align": "right",
+                      "title_color": "#FFFFFF",
+                      "typography_typography": "custom",
+                      "typography_font_family": "Montserrat",
+                      "typography_font_size": {
+                        "size": 18,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "300",
+                      "_margin": {
+                        "top": "30",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "unit": "px",
+                        "isLinked": false
+                      }
+                    }
+                  },
+                  {
+                    "id": "m8b1kgp",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<p style=\"text-align: right; color: rgba(255,255,255,0.5); font-size: 14px; line-height: 1.6;\">14th Floor, Westburry Office,<br>Business Bay</p>",
+                      "_margin": {
+                        "top": "8",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "unit": "px",
+                        "isLinked": false
+                      }
+                    }
+                  },
+                  {
+                    "id": "quthj9j",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<p style=\"text-align: right; color: rgba(255,255,255,0.5); font-size: 18px; letter-spacing: 16px;\">\u2709 f \ud835\udd4f in \u260e \u25ce \u2756 \u25b6</p>",
+                      "_margin": {
+                        "top": "24",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "unit": "px",
+                        "isLinked": false
+                      }
+                    }
+                  },
+                  {
+                    "id": "25k4mvu",
+                    "elType": "widget",
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "CALL US",
+                      "align": "right",
+                      "typography_typography": "custom",
+                      "typography_font_family": "Montserrat",
+                      "typography_font_size": {
+                        "size": 13,
+                        "unit": "px"
+                      },
+                      "typography_font_weight": "400",
+                      "typography_letter_spacing": {
+                        "size": 3,
+                        "unit": "px"
+                      },
+                      "button_text_color": "rgba(255,255,255,0.7)",
+                      "background_color": "transparent",
+                      "border_border": "solid",
+                      "border_width": {
+                        "top": "1",
+                        "right": "1",
+                        "bottom": "1",
+                        "left": "1",
+                        "unit": "px",
+                        "isLinked": true
+                      },
+                      "border_color": "rgba(255,255,255,0.25)",
+                      "border_radius": {
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "unit": "px",
+                        "isLinked": true
+                      },
+                      "button_padding": {
+                        "top": "16",
+                        "right": "60",
+                        "bottom": "16",
+                        "left": "60",
+                        "unit": "px",
+                        "isLinked": false
+                      },
+                      "_margin": {
+                        "top": "24",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "unit": "px",
+                        "isLinked": false
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "bll7fzh",
+            "elType": "container",
+            "settings": {
+              "content_width": "boxed",
+              "boxed_width": {
+                "size": 600,
+                "unit": "px"
+              },
+              "padding": {
+                "top": "50",
+                "right": "40",
+                "bottom": "0",
+                "left": "40",
+                "unit": "px",
+                "isLinked": false
+              }
+            },
+            "elements": [
+              {
+                "id": "aicim2u",
+                "elType": "widget",
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style=\"color: rgba(255,255,255,0.4); font-size: 14px; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.15);\"><span style=\"margin-right: 14px; opacity: 0.6;\">\ud83d\udd0d</span>Properties or locations</p>"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -352,17 +352,87 @@ App Password: 7Fbg xKjQ fdKi JCNk JQIv ESxr
 | v1.0 | Initial | Basic Elementor generation |
 | v1.1 | - | WordPress REST API integration |
 | v1.2 | - | Services section with image cards |
-| v1.3 | Current | Full-width sections + AX Capital footer |
+| v1.3 | - | Full-width sections + AX Capital footer |
+| **ULTIMATE V1** | **Dec 2024** | **LOCKED PERFECTED DESKTOP VERSION** |
 
 ---
 
-## Next Steps
+## ULTIMATE V1 - LOCKED DESKTOP VERSION
 
-After implementing all fixes above, the app should:
-1. Generate full-width sections automatically
-2. Create professional service cards (3 per row)
-3. Use high-quality images from Unsplash
-4. Apply proper AX Capital typography and colors
-5. Generate complete footer structure
+This is the **FINAL, PERFECTED** desktop version. All future pages generated through the app (terminal or web UI) should match this quality.
 
-Run `python3 fullwidth_fix.py` to see the target result, then implement these patterns in `elementor_pro_generator.py`.
+### Reference Page
+**Live URL**: https://wordpress-1097675-6048787.cloudwaysapps.com/test5-2/
+**Elementor Editor**: https://wordpress-1097675-6048787.cloudwaysapps.com/wp-admin/post.php?post=110&action=elementor
+
+### Key Files for Ultimate V1
+
+| File | Purpose |
+|------|---------|
+| `ULTIMATE_V1_TEMPLATE.py` | Locked template with all perfected patterns |
+| `ULTIMATE_V1_REFERENCE.json` | Exported JSON of the perfected page |
+| `fullwidth_fix.py` | Script to restore/apply the Ultimate V1 design |
+| `generators/elementor_pro_generator.py` | Updated with Ultimate V1 patterns |
+
+### Ultimate V1 Design Specifications
+
+**Section Structure:**
+- Hero → Trusted By → **Services** → Consultation → Footer
+- All sections use `elType: "section"` with `stretch_section: "section-stretched"`
+- Content boxed at 1400px within full-width sections
+
+**Service Cards (6 total, 3 per row):**
+- Width: 32% desktop, 48% tablet, 100% mobile
+- Min height: 280px
+- Background: High-quality Unsplash images
+- Overlay: Linear gradient (transparent → rgba(10,10,15,0.9))
+- Border radius: 8px
+- Shadow: 0 10px 30px rgba(0,0,0,0.3)
+
+**Typography (Montserrat):**
+- Section label: 13px, 500 weight, 4px letter-spacing, gold (#c9a962)
+- Section title: 48px, 300 weight, 1px letter-spacing, white
+- Card title: 20px, 600 weight, white
+- Card description: 14px, 400 weight, rgba(255,255,255,0.7)
+
+**Colors:**
+- Background: #0a0a0f
+- Gold accent: #c9a962
+- Text: #FFFFFF, rgba(255,255,255,0.7), rgba(255,255,255,0.5)
+
+### How to Restore Ultimate V1
+
+```bash
+cd /Users/antoniasepulvedagrasins/figma-to-elementor
+python3 fullwidth_fix.py
+```
+
+Then open Elementor editor and click UPDATE.
+
+---
+
+## Implementation Status
+
+### ✅ COMPLETED (Ultimate V1)
+- [x] Full-width sections with `stretch_section`
+- [x] Service cards 3-per-row (32% width)
+- [x] Gradient overlays on image cards
+- [x] Responsive breakpoints (tablet/mobile)
+- [x] Montserrat typography system
+- [x] High-quality Unsplash images
+- [x] AX Capital color scheme
+- [x] Footer structure (logo + nav columns + contacts)
+- [x] `elementor_pro_generator.py` updated with Ultimate V1 patterns
+
+### 🔄 NEXT: Mobile/Tablet Optimization
+- [ ] Mobile responsive refinements
+- [ ] Tablet layout testing
+- [ ] Touch-friendly button sizes
+
+---
+
+## GitHub Repository
+
+**URL**: https://github.com/grasinsantonia-maker/figma-to-elementor
+
+All Ultimate V1 files committed and tagged for reference.
