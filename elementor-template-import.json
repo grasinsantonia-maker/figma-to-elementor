@@ -1,0 +1,808 @@
+{
+  "version": "0.4",
+  "title": "Nadav Cohen Digital - Landing Page",
+  "type": "page",
+  "content": [
+    {
+      "id": "1a2b3c4d",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "structure": "20",
+        "padding": {
+          "unit": "px",
+          "top": "15",
+          "right": "80",
+          "bottom": "15",
+          "left": "80",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FAFAF7"
+      },
+      "elements": [
+        {
+          "id": "2b3c4d5e",
+          "elType": "column",
+          "settings": {
+            "_column_size": 30,
+            "_inline_size": 30
+          },
+          "elements": [
+            {
+              "id": "logo001",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "[ NC Logo ]",
+                "align": "left",
+                "title_color": "#0485B2",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "500"
+              }
+            }
+          ]
+        },
+        {
+          "id": "3c4d5e6f",
+          "elType": "column",
+          "settings": {
+            "_column_size": 70,
+            "_inline_size": 70
+          },
+          "elements": [
+            {
+              "id": "nav001",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Get Started",
+                "align": "right",
+                "background_color": "#0485B2",
+                "button_text_color": "#FFFFFF",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "500",
+                "button_padding": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "28",
+                  "bottom": "12",
+                  "left": "28"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hero001",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "extended",
+        "structure": "20",
+        "min_height": {
+          "unit": "px",
+          "size": 700
+        },
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "80",
+          "bottom": "100",
+          "left": "80",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FAFAF7"
+      },
+      "elements": [
+        {
+          "id": "hero002",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": 50,
+            "content_position": "center"
+          },
+          "elements": [
+            {
+              "id": "hero003",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "We help brands",
+                "header_size": "h1",
+                "align": "left",
+                "title_color": "#1A1A1A",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 72
+                },
+                "typography_font_weight": "300",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.1
+                }
+              }
+            },
+            {
+              "id": "hero004",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "dominate search.",
+                "header_size": "h1",
+                "align": "left",
+                "title_color": "#1A1A1A",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 72
+                },
+                "typography_font_weight": "600",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.1
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "30",
+                  "left": "0",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "hero005",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Strategic SEO solutions that drive organic growth, increase visibility, and deliver measurable results.",
+                "align": "left",
+                "text_color": "#737373",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 20
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.5
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "40",
+                  "left": "0",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "hero006",
+              "elType": "section",
+              "isInner": true,
+              "settings": {
+                "layout": "full_width",
+                "gap": "default",
+                "structure": "20"
+              },
+              "elements": [
+                {
+                  "id": "hero007",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 50,
+                    "_inline_size": 40
+                  },
+                  "elements": [
+                    {
+                      "id": "btn001",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Start a Project",
+                        "align": "left",
+                        "size": "md",
+                        "background_color": "#0485B2",
+                        "button_text_color": "#FFFFFF",
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "28",
+                          "right": "28",
+                          "bottom": "28",
+                          "left": "28",
+                          "isLinked": true
+                        },
+                        "typography_typography": "custom",
+                        "typography_font_family": "Inter",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 16
+                        },
+                        "typography_font_weight": "500",
+                        "button_padding": {
+                          "unit": "px",
+                          "top": "16",
+                          "right": "32",
+                          "bottom": "16",
+                          "left": "32"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "hero008",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 50,
+                    "_inline_size": 40
+                  },
+                  "elements": [
+                    {
+                      "id": "btn002",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "View Our Work",
+                        "align": "left",
+                        "size": "md",
+                        "button_type": "default",
+                        "background_color": "#FAFAF7",
+                        "button_text_color": "#0485B2",
+                        "border_border": "solid",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "2",
+                          "right": "2",
+                          "bottom": "2",
+                          "left": "2",
+                          "isLinked": true
+                        },
+                        "border_color": "#0485B2",
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "28",
+                          "right": "28",
+                          "bottom": "28",
+                          "left": "28",
+                          "isLinked": true
+                        },
+                        "typography_typography": "custom",
+                        "typography_font_family": "Inter",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 16
+                        },
+                        "typography_font_weight": "500",
+                        "button_padding": {
+                          "unit": "px",
+                          "top": "16",
+                          "right": "32",
+                          "bottom": "16",
+                          "left": "32"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hero009",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_inline_size": 50,
+            "content_position": "center"
+          },
+          "elements": [
+            {
+              "id": "hero010",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 520
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "svc001",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "80",
+          "bottom": "80",
+          "left": "80",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "svc002",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "svc003",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Our Services",
+                "header_size": "h6",
+                "align": "left",
+                "title_color": "#0485B2",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "500",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "10",
+                  "left": "0",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "svc004",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "What we do best",
+                "header_size": "h2",
+                "align": "left",
+                "title_color": "#1A1A1A",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "600",
+                "_margin": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "60",
+                  "left": "0",
+                  "isLinked": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cards001",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "extended",
+        "structure": "30",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "80",
+          "bottom": "80",
+          "left": "80",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "card001",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": 33,
+            "background_background": "classic",
+            "background_color": "#F5F5F2",
+            "border_radius": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "30",
+              "right": "30",
+              "bottom": "30",
+              "left": "30",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "card002",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 180
+                },
+                "background_background": "classic",
+                "background_color": "rgba(4, 133, 178, 0.15)"
+              }
+            },
+            {
+              "id": "card003",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Technical SEO",
+                "header_size": "h3",
+                "title_color": "#1A1A1A",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 24
+                },
+                "typography_font_weight": "600",
+                "_margin": {
+                  "unit": "px",
+                  "top": "30",
+                  "bottom": "15",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "card004",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Optimize your website's foundation with comprehensive audits, site speed improvements, and structured data implementation.",
+                "text_color": "#737373",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6
+                },
+                "_margin": {
+                  "unit": "px",
+                  "bottom": "25",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "card005",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Learn more \u2192",
+                "header_size": "h6",
+                "title_color": "#0485B2",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "500"
+              }
+            }
+          ]
+        },
+        {
+          "id": "card101",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": 33,
+            "background_background": "classic",
+            "background_color": "#F5F5F2",
+            "border_radius": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "30",
+              "right": "30",
+              "bottom": "30",
+              "left": "30",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "card102",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 180
+                }
+              }
+            },
+            {
+              "id": "card103",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Content Strategy",
+                "header_size": "h3",
+                "title_color": "#1A1A1A",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 24
+                },
+                "typography_font_weight": "600",
+                "_margin": {
+                  "unit": "px",
+                  "top": "30",
+                  "bottom": "15",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "card104",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Data-driven content planning that targets high-value keywords and creates engaging material your audience actually wants.",
+                "text_color": "#737373",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6
+                },
+                "_margin": {
+                  "unit": "px",
+                  "bottom": "25",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "card105",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Learn more \u2192",
+                "header_size": "h6",
+                "title_color": "#0485B2",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "500"
+              }
+            }
+          ]
+        },
+        {
+          "id": "card201",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_inline_size": 33,
+            "background_background": "classic",
+            "background_color": "#F5F5F2",
+            "border_radius": {
+              "unit": "px",
+              "top": "16",
+              "right": "16",
+              "bottom": "16",
+              "left": "16",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "30",
+              "right": "30",
+              "bottom": "30",
+              "left": "30",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "card202",
+              "elType": "widget",
+              "widgetType": "spacer",
+              "settings": {
+                "space": {
+                  "unit": "px",
+                  "size": 180
+                }
+              }
+            },
+            {
+              "id": "card203",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Link Building",
+                "header_size": "h3",
+                "title_color": "#1A1A1A",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 24
+                },
+                "typography_font_weight": "600",
+                "_margin": {
+                  "unit": "px",
+                  "top": "30",
+                  "bottom": "15",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "card204",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Build domain authority through ethical, white-hat link acquisition strategies that deliver lasting results.",
+                "text_color": "#737373",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.6
+                },
+                "_margin": {
+                  "unit": "px",
+                  "bottom": "25",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "card205",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Learn more \u2192",
+                "header_size": "h6",
+                "title_color": "#0485B2",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "500"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ftr001",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "80",
+          "bottom": "40",
+          "left": "80",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#1A1A1A"
+      },
+      "elements": [
+        {
+          "id": "ftr002",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "ftr003",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\u00a9 2024 Nadav Cohen Digital. All rights reserved.",
+                "align": "center",
+                "text_color": "#808080",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "template": "elementor_canvas",
+    "hide_title": "yes"
+  }
+}

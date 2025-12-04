@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma to Elementor Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Figma to Elementor</h1>
+            <p class="subtitle">Convert your Figma designs to WordPress/Elementor templates</p>
+        </header>
+
+        <main>
+            <!-- Step 1: Figma Data Input -->
+            <section class="card" id="step-figma">
+                <div class="step-header">
+                    <span class="step-number">1</span>
+                    <h2>Paste Figma Data</h2>
+                </div>
+                <div class="step-content">
+                    <p>Paste the Figma node JSON data from your MCP connection or Figma API:</p>
+                    <textarea id="figma-json" placeholder='{"id": "1:2", "name": "Frame", "type": "FRAME", ...}'></textarea>
+                    <button class="btn primary" onclick="convertFigma()">Convert to Elementor</button>
+                </div>
+            </section>
+
+            <!-- Step 2: Preview & Download -->
+            <section class="card hidden" id="step-preview">
+                <div class="step-header">
+                    <span class="step-number">2</span>
+                    <h2>Preview & Download</h2>
+                </div>
+                <div class="step-content">
+                    <div class="preview-stats">
+                        <div class="stat">
+                            <span class="stat-value" id="element-count">0</span>
+                            <span class="stat-label">Elements</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value" id="color-count">0</span>
+                            <span class="stat-label">Colors</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value" id="font-count">0</span>
+                            <span class="stat-label">Fonts</span>
+                        </div>
+                    </div>
+
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('elementor-json')">Elementor JSON</button>
+                        <button class="tab" onclick="showTab('css-vars')">CSS Variables</button>
+                    </div>
+
+                    <div class="tab-content active" id="elementor-json">
+                        <pre id="elementor-preview"></pre>
+                    </div>
+                    <div class="tab-content" id="css-vars">
+                        <pre id="css-preview"></pre>
+                    </div>
+
+                    <div class="actions">
+                        <button class="btn secondary" onclick="downloadJSON()">Download JSON</button>
+                        <button class="btn primary" onclick="showWordPressConnect()">Push to WordPress</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 3: WordPress Connection -->
+            <section class="card hidden" id="step-wordpress">
+                <div class="step-header">
+                    <span class="step-number">3</span>
+                    <h2>Connect to WordPress</h2>
+                </div>
+                <div class="step-content">
+                    <div class="form-group">
+                        <label for="wp-url">WordPress Site URL</label>
+                        <input type="url" id="wp-url" placeholder="https://yoursite.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="wp-username">Username</label>
+                        <input type="text" id="wp-username" placeholder="admin">
+                    </div>
+                    <div class="form-group">
+                        <label for="wp-password">Application Password</label>
+                        <input type="password" id="wp-password" placeholder="xxxx xxxx xxxx xxxx">
+                        <small>Generate an Application Password in WordPress: Users > Your Profile > Application Passwords</small>
+                    </div>
+                    <button class="btn secondary" onclick="testWordPress()">Test Connection</button>
+                    <div id="wp-status" class="status hidden"></div>
+
+                    <hr>
+
+                    <div class="form-group">
+                        <label for="page-title">Page Title</label>
+                        <input type="text" id="page-title" placeholder="Imported from Figma">
+                    </div>
+                    <div class="form-group">
+                        <label>Create As</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="create-as" value="page" checked> Page</label>
+                            <label><input type="radio" name="create-as" value="template"> Elementor Template</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Status</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="status" value="draft" checked> Draft</label>
+                            <label><input type="radio" name="status" value="publish"> Published</label>
+                        </div>
+                    </div>
+
+                    <button class="btn primary" onclick="pushToWordPress()">Push to WordPress</button>
+                    <div id="push-status" class="status hidden"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Built with Claude Code + Figma MCP</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
