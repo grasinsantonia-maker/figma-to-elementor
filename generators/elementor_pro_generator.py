@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 PRO-LEVEL Elementor Generator - Creates stunning, agency-quality pages
-Inspired by top sites like ThriveState.io, Stripe, Linear, etc.
+Inspired by AX Capital, ThriveState.io, premium real estate & SaaS sites
 """
 
 import json
@@ -20,18 +20,14 @@ class ElementorProGenerator:
         """Generate complete pro-level Elementor page"""
         sections = []
 
-        # 1. Sticky transparent header
-        if design_spec.get('header', True):
-            sections.append(self._create_pro_header(design_spec))
-
-        # 2. Full-screen hero with overlay
+        # 1. COMBINED: Hero with integrated floating header (AX Capital style)
         if design_spec.get('hero', True):
-            sections.append(self._create_pro_hero(design_spec))
+            sections.append(self._create_premium_hero_with_header(design_spec))
 
-        # 3. Trusted by / logos section
+        # 2. Trusted by / logos section
         sections.append(self._create_trusted_by_section(design_spec))
 
-        # 4. Generate content sections
+        # 3. Generate content sections
         for section in design_spec.get('sections', []):
             section_type = section.get('type', 'generic')
 
@@ -52,10 +48,10 @@ class ElementorProGenerator:
             elif section_type == 'faq':
                 sections.append(self._create_pro_faq(design_spec, section))
 
-        # 5. Final CTA section
+        # 4. Final CTA section
         sections.append(self._create_final_cta(design_spec))
 
-        # 6. Pro footer
+        # 5. Pro footer
         if design_spec.get('footer', True):
             sections.append(self._create_pro_footer(design_spec))
 
@@ -70,7 +66,7 @@ class ElementorProGenerator:
         }
 
     def _get_colors(self, design_spec):
-        """Extract colors with professional defaults"""
+        """Extract colors with premium defaults (AX Capital inspired)"""
         colors = design_spec.get('colors', {})
 
         def get_color(key, default):
@@ -80,16 +76,20 @@ class ElementorProGenerator:
             return val
 
         return {
-            'primary': get_color('primary', '#6366f1'),  # Modern indigo
-            'secondary': get_color('secondary', '#0f172a'),  # Dark slate
-            'text': get_color('text', '#1e293b'),
-            'text_light': '#64748b',
-            'background': get_color('background', '#ffffff'),
-            'background_alt': '#f8fafc',
-            'accent': get_color('accent', '#22d3ee'),  # Cyan accent
-            'dark': '#0f172a',
-            'gradient_start': get_color('primary', '#6366f1'),
-            'gradient_end': '#8b5cf6'  # Purple
+            'primary': get_color('primary', '#C9A87C'),  # Elegant gold/bronze
+            'secondary': get_color('secondary', '#1a1a2e'),  # Deep navy
+            'text': get_color('text', '#ffffff'),
+            'text_light': 'rgba(255,255,255,0.7)',
+            'text_dark': '#1a1a2e',
+            'background': get_color('background', '#0a0a0f'),  # Near black
+            'background_alt': '#f8f6f3',  # Warm off-white
+            'accent': get_color('accent', '#C9A87C'),  # Gold accent
+            'dark': '#0a0a0f',
+            'cta_primary': '#C9A87C',  # Gold CTA
+            'cta_secondary': 'transparent',
+            'overlay': 'rgba(0,0,0,0.5)',
+            'gradient_start': '#1a1a2e',  # For gradient sections
+            'gradient_end': '#C9A87C'
         }
 
     def _get_fonts(self, design_spec):
@@ -97,14 +97,21 @@ class ElementorProGenerator:
         fonts = design_spec.get('fonts', ['Inter'])
         return fonts[0] if isinstance(fonts, list) else fonts
 
-    # ==================== PRO HEADER ====================
-    def _create_pro_header(self, design_spec):
-        """Create sticky transparent header"""
+    # ==================== PREMIUM HERO WITH FLOATING HEADER (AX Capital Style) ====================
+    def _create_premium_hero_with_header(self, design_spec):
+        """Create full-bleed hero with background image, dark overlay, and floating transparent header"""
         colors = self._get_colors(design_spec)
         font = self._get_fonts(design_spec)
+        hero = design_spec.get('hero', {})
         site_name = design_spec.get('site_name', 'Brand')
-        nav_items = design_spec.get('nav_items', ['Features', 'Solutions', 'Pricing', 'About'])
+        nav_items = design_spec.get('nav_items', ['Buy', 'Rent', 'Sell', 'Services', 'About'])
 
+        headline = hero.get('headline', 'INVEST IN PREMIUM REAL ESTATE')
+        subheadline = hero.get('subheadline', 'We bring Due Diligence at Your service')
+        cta_text = hero.get('cta_text', 'Leave a request')
+        cta_secondary = hero.get('cta_secondary', 'Already an owner?')
+
+        # Navigation links for header
         nav_links = []
         for item in nav_items:
             nav_links.append({
@@ -119,84 +126,12 @@ class ElementorProGenerator:
                     'typography_typography': 'custom',
                     'typography_font_family': font,
                     'typography_font_size': {'unit': 'px', 'size': 15},
-                    'typography_font_weight': '500',
-                    'button_padding': {'unit': 'px', 'top': '10', 'right': '20', 'bottom': '10', 'left': '20'},
+                    'typography_font_weight': '400',
+                    'typography_letter_spacing': {'unit': 'px', 'size': 0.5},
+                    'button_padding': {'unit': 'px', 'top': '10', 'right': '24', 'bottom': '10', 'left': '24'},
                     'hover_color': colors['accent']
                 }
             })
-
-        # CTA button
-        nav_links.append({
-            'id': self._generate_id(),
-            'elType': 'widget',
-            'widgetType': 'button',
-            'settings': {
-                'text': 'Get Started',
-                'link': {'url': '#contact'},
-                'background_color': '#ffffff',
-                'button_text_color': colors['dark'],
-                'border_radius': {'unit': 'px', 'size': 8},
-                'typography_typography': 'custom',
-                'typography_font_family': font,
-                'typography_font_size': {'unit': 'px', 'size': 14},
-                'typography_font_weight': '600',
-                'button_padding': {'unit': 'px', 'top': '12', 'right': '24', 'bottom': '12', 'left': '24'}
-            }
-        })
-
-        return {
-            'id': self._generate_id(),
-            'elType': 'container',
-            'settings': {
-                'content_width': 'full',
-                'flex_direction': 'row',
-                'flex_justify_content': 'space-between',
-                'flex_align_items': 'center',
-                'padding': {'unit': 'px', 'top': '20', 'right': '60', 'bottom': '20', 'left': '60'},
-                'background_background': 'classic',
-                'background_color': 'rgba(15, 23, 42, 0.95)',
-                'position': 'fixed',
-                'z_index': 1000,
-                '_element_width': 'full'
-            },
-            'elements': [
-                {
-                    'id': self._generate_id(),
-                    'elType': 'widget',
-                    'widgetType': 'heading',
-                    'settings': {
-                        'title': site_name,
-                        'header_size': 'h4',
-                        'title_color': '#ffffff',
-                        'typography_typography': 'custom',
-                        'typography_font_family': font,
-                        'typography_font_weight': '700',
-                        'typography_font_size': {'unit': 'px', 'size': 26}
-                    }
-                },
-                {
-                    'id': self._generate_id(),
-                    'elType': 'container',
-                    'settings': {
-                        'flex_direction': 'row',
-                        'flex_align_items': 'center',
-                        'flex_gap': {'unit': 'px', 'size': 8}
-                    },
-                    'elements': nav_links
-                }
-            ]
-        }
-
-    # ==================== PRO HERO ====================
-    def _create_pro_hero(self, design_spec):
-        """Create stunning full-screen hero with gradient overlay"""
-        colors = self._get_colors(design_spec)
-        font = self._get_fonts(design_spec)
-        hero = design_spec.get('hero', {})
-
-        headline = hero.get('headline', 'Build Something Amazing')
-        subheadline = hero.get('subheadline', 'The all-in-one platform that helps you create, launch, and scale your digital presence with powerful tools and beautiful design.')
-        cta_text = hero.get('cta_text', 'Start Free Trial')
 
         return {
             'id': self._generate_id(),
@@ -205,90 +140,72 @@ class ElementorProGenerator:
                 'content_width': 'full',
                 'min_height': {'unit': 'vh', 'size': 100},
                 'flex_direction': 'column',
-                'flex_justify_content': 'center',
-                'flex_align_items': 'center',
-                'padding': {'unit': 'px', 'top': '140', 'right': '40', 'bottom': '100', 'left': '40'},
-                'background_background': 'gradient',
-                'background_color': colors['dark'],
-                'background_color_b': colors['gradient_start'],
-                'background_gradient_type': 'linear',
-                'background_gradient_angle': {'unit': 'deg', 'size': 135}
+                'flex_justify_content': 'flex-start',
+                'flex_align_items': 'stretch',
+                'padding': {'unit': 'px', 'top': '0', 'right': '0', 'bottom': '0', 'left': '0'},
+                # Background image with overlay
+                'background_background': 'classic',
+                'background_color': '#0a0a0f',
+                'background_image': {
+                    'url': 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=80',
+                    'id': ''
+                },
+                'background_position': 'center center',
+                'background_size': 'cover',
+                'background_overlay_background': 'classic',
+                'background_overlay_color': 'rgba(0,0,0,0.55)'
             },
             'elements': [
+                # ===== FLOATING HEADER =====
                 {
                     'id': self._generate_id(),
                     'elType': 'container',
                     'settings': {
-                        'content_width': 'boxed',
-                        'boxed_width': {'unit': 'px', 'size': 1000},
-                        'flex_direction': 'column',
-                        'flex_align_items': 'center'
+                        'content_width': 'full',
+                        'flex_direction': 'row',
+                        'flex_justify_content': 'space-between',
+                        'flex_align_items': 'center',
+                        'padding': {'unit': 'px', 'top': '24', 'right': '60', 'bottom': '24', 'left': '60'},
+                        'background_background': 'classic',
+                        'background_color': 'transparent',
+                        'z_index': 100
                     },
                     'elements': [
-                        # Badge/pill
-                        {
-                            'id': self._generate_id(),
-                            'elType': 'widget',
-                            'widgetType': 'button',
-                            'settings': {
-                                'text': '✨ Introducing our new platform',
-                                'button_type': 'info',
-                                'background_color': 'rgba(255,255,255,0.1)',
-                                'button_text_color': '#ffffff',
-                                'border_radius': {'unit': 'px', 'size': 50},
-                                'typography_typography': 'custom',
-                                'typography_font_family': font,
-                                'typography_font_size': {'unit': 'px', 'size': 14},
-                                'typography_font_weight': '500',
-                                'button_padding': {'unit': 'px', 'top': '10', 'right': '24', 'bottom': '10', 'left': '24'},
-                                '_margin': {'unit': 'px', 'top': '0', 'right': '0', 'bottom': '30', 'left': '0'}
-                            }
-                        },
-                        # Main headline
+                        # Logo/Brand
                         {
                             'id': self._generate_id(),
                             'elType': 'widget',
                             'widgetType': 'heading',
                             'settings': {
-                                'title': headline,
-                                'header_size': 'h1',
-                                'align': 'center',
+                                'title': site_name,
+                                'header_size': 'h4',
                                 'title_color': '#ffffff',
                                 'typography_typography': 'custom',
                                 'typography_font_family': font,
-                                'typography_font_size': {'unit': 'px', 'size': 72},
-                                'typography_font_size_tablet': {'unit': 'px', 'size': 52},
-                                'typography_font_size_mobile': {'unit': 'px', 'size': 38},
-                                'typography_font_weight': '800',
-                                'typography_line_height': {'unit': 'em', 'size': 1.1},
-                                'typography_letter_spacing': {'unit': 'px', 'size': -2}
+                                'typography_font_weight': '300',
+                                'typography_font_size': {'unit': 'px', 'size': 28},
+                                'typography_letter_spacing': {'unit': 'px', 'size': 2}
                             }
                         },
-                        # Subheadline
-                        {
-                            'id': self._generate_id(),
-                            'elType': 'widget',
-                            'widgetType': 'text-editor',
-                            'settings': {
-                                'editor': f'<p style="text-align: center; max-width: 700px; margin: 0 auto;">{subheadline}</p>',
-                                'align': 'center',
-                                'text_color': 'rgba(255,255,255,0.8)',
-                                'typography_typography': 'custom',
-                                'typography_font_family': font,
-                                'typography_font_size': {'unit': 'px', 'size': 20},
-                                'typography_line_height': {'unit': 'em', 'size': 1.7},
-                                '_margin': {'unit': 'px', 'top': '30', 'right': '0', 'bottom': '50', 'left': '0'}
-                            }
-                        },
-                        # CTA buttons row
+                        # Navigation
                         {
                             'id': self._generate_id(),
                             'elType': 'container',
                             'settings': {
                                 'flex_direction': 'row',
-                                'flex_gap': {'unit': 'px', 'size': 16},
-                                'flex_justify_content': 'center',
-                                'flex_wrap': 'wrap'
+                                'flex_align_items': 'center',
+                                'flex_gap': {'unit': 'px', 'size': 8}
+                            },
+                            'elements': nav_links
+                        },
+                        # Right side icons/CTA
+                        {
+                            'id': self._generate_id(),
+                            'elType': 'container',
+                            'settings': {
+                                'flex_direction': 'row',
+                                'flex_align_items': 'center',
+                                'flex_gap': {'unit': 'px', 'size': 24}
                             },
                             'elements': [
                                 {
@@ -296,56 +213,248 @@ class ElementorProGenerator:
                                     'elType': 'widget',
                                     'widgetType': 'button',
                                     'settings': {
-                                        'text': cta_text,
+                                        'text': 'CONTACT US',
                                         'link': {'url': '#contact'},
-                                        'background_color': '#ffffff',
-                                        'button_text_color': colors['dark'],
-                                        'border_radius': {'unit': 'px', 'size': 10},
+                                        'button_type': 'link',
+                                        'button_text_color': '#ffffff',
                                         'typography_typography': 'custom',
                                         'typography_font_family': font,
-                                        'typography_font_size': {'unit': 'px', 'size': 17},
-                                        'typography_font_weight': '600',
-                                        'button_padding': {'unit': 'px', 'top': '18', 'right': '36', 'bottom': '18', 'left': '36'},
-                                        'box_shadow_box_shadow_type': 'yes',
-                                        'box_shadow_box_shadow': {'horizontal': 0, 'vertical': 4, 'blur': 14, 'spread': 0, 'color': 'rgba(0,0,0,0.25)'}
+                                        'typography_font_size': {'unit': 'px', 'size': 13},
+                                        'typography_font_weight': '500',
+                                        'typography_letter_spacing': {'unit': 'px', 'size': 1}
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                # ===== HERO CONTENT - LEFT ALIGNED =====
+                {
+                    'id': self._generate_id(),
+                    'elType': 'container',
+                    'settings': {
+                        'content_width': 'boxed',
+                        'boxed_width': {'unit': 'px', 'size': 1400},
+                        'min_height': {'unit': 'vh', 'size': 75},
+                        'flex_direction': 'row',
+                        'flex_justify_content': 'space-between',
+                        'flex_align_items': 'center',
+                        'padding': {'unit': 'px', 'top': '60', 'right': '60', 'bottom': '100', 'left': '60'}
+                    },
+                    'elements': [
+                        # Left content column
+                        {
+                            'id': self._generate_id(),
+                            'elType': 'container',
+                            'settings': {
+                                'width': {'unit': '%', 'size': 55},
+                                'flex_direction': 'column',
+                                'flex_align_items': 'flex-start'
+                            },
+                            'elements': [
+                                # Main headline - LEFT ALIGNED, LIGHT WEIGHT
+                                {
+                                    'id': self._generate_id(),
+                                    'elType': 'widget',
+                                    'widgetType': 'heading',
+                                    'settings': {
+                                        'title': headline,
+                                        'header_size': 'h1',
+                                        'align': 'left',
+                                        'title_color': '#ffffff',
+                                        'typography_typography': 'custom',
+                                        'typography_font_family': font,
+                                        'typography_font_size': {'unit': 'px', 'size': 56},
+                                        'typography_font_size_tablet': {'unit': 'px', 'size': 42},
+                                        'typography_font_size_mobile': {'unit': 'px', 'size': 32},
+                                        'typography_font_weight': '300',
+                                        'typography_line_height': {'unit': 'em', 'size': 1.15},
+                                        'typography_letter_spacing': {'unit': 'px', 'size': 1}
+                                    }
+                                },
+                                # Subheadline
+                                {
+                                    'id': self._generate_id(),
+                                    'elType': 'widget',
+                                    'widgetType': 'text-editor',
+                                    'settings': {
+                                        'editor': f'<p>{subheadline}</p>',
+                                        'align': 'left',
+                                        'text_color': 'rgba(255,255,255,0.75)',
+                                        'typography_typography': 'custom',
+                                        'typography_font_family': font,
+                                        'typography_font_size': {'unit': 'px', 'size': 18},
+                                        'typography_font_weight': '300',
+                                        'typography_line_height': {'unit': 'em', 'size': 1.6},
+                                        '_margin': {'unit': 'px', 'top': '24', 'right': '0', 'bottom': '40', 'left': '0'}
+                                    }
+                                },
+                                # CTA buttons - STACKED VERTICALLY
+                                {
+                                    'id': self._generate_id(),
+                                    'elType': 'container',
+                                    'settings': {
+                                        'flex_direction': 'column',
+                                        'flex_gap': {'unit': 'px', 'size': 16},
+                                        'flex_align_items': 'flex-start'
+                                    },
+                                    'elements': [
+                                        # Primary CTA - Filled gold/salmon
+                                        {
+                                            'id': self._generate_id(),
+                                            'elType': 'widget',
+                                            'widgetType': 'button',
+                                            'settings': {
+                                                'text': cta_text,
+                                                'link': {'url': '#contact'},
+                                                'background_color': colors['cta_primary'],
+                                                'button_text_color': '#1a1a2e',
+                                                'border_radius': {'unit': 'px', 'size': 0},
+                                                'typography_typography': 'custom',
+                                                'typography_font_family': font,
+                                                'typography_font_size': {'unit': 'px', 'size': 15},
+                                                'typography_font_weight': '500',
+                                                'button_padding': {'unit': 'px', 'top': '18', 'right': '48', 'bottom': '18', 'left': '48'}
+                                            }
+                                        },
+                                        # Secondary CTA - Outlined
+                                        {
+                                            'id': self._generate_id(),
+                                            'elType': 'widget',
+                                            'widgetType': 'button',
+                                            'settings': {
+                                                'text': cta_secondary,
+                                                'link': {'url': '#owners'},
+                                                'background_color': 'rgba(201, 168, 124, 0.15)',
+                                                'button_text_color': colors['cta_primary'],
+                                                'border_border': 'solid',
+                                                'border_width': {'unit': 'px', 'top': '1', 'right': '1', 'bottom': '1', 'left': '1'},
+                                                'border_color': colors['cta_primary'],
+                                                'border_radius': {'unit': 'px', 'size': 0},
+                                                'typography_typography': 'custom',
+                                                'typography_font_family': font,
+                                                'typography_font_size': {'unit': 'px', 'size': 15},
+                                                'typography_font_weight': '500',
+                                                'button_padding': {'unit': 'px', 'top': '18', 'right': '48', 'bottom': '18', 'left': '48'}
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        # Right side - Filter/Search widget placeholder
+                        {
+                            'id': self._generate_id(),
+                            'elType': 'container',
+                            'settings': {
+                                'width': {'unit': '%', 'size': 38},
+                                'padding': {'unit': 'px', 'top': '40', 'right': '36', 'bottom': '40', 'left': '36'},
+                                'background_background': 'classic',
+                                'background_color': 'rgba(255,255,255,0.97)',
+                                'border_radius': {'unit': 'px', 'size': 4},
+                                'flex_direction': 'column'
+                            },
+                            'elements': [
+                                # Tab buttons
+                                {
+                                    'id': self._generate_id(),
+                                    'elType': 'container',
+                                    'settings': {
+                                        'flex_direction': 'row',
+                                        'flex_gap': {'unit': 'px', 'size': 0},
+                                        '_margin': {'unit': 'px', 'top': '0', 'right': '0', 'bottom': '30', 'left': '0'}
+                                    },
+                                    'elements': [
+                                        {
+                                            'id': self._generate_id(),
+                                            'elType': 'widget',
+                                            'widgetType': 'button',
+                                            'settings': {
+                                                'text': 'Primary',
+                                                'background_color': colors['cta_primary'],
+                                                'button_text_color': '#1a1a2e',
+                                                'border_radius': {'unit': 'px', 'size': 30},
+                                                'typography_typography': 'custom',
+                                                'typography_font_family': font,
+                                                'typography_font_size': {'unit': 'px', 'size': 14},
+                                                'typography_font_weight': '500',
+                                                'button_padding': {'unit': 'px', 'top': '12', 'right': '28', 'bottom': '12', 'left': '28'}
+                                            }
+                                        },
+                                        {
+                                            'id': self._generate_id(),
+                                            'elType': 'widget',
+                                            'widgetType': 'button',
+                                            'settings': {
+                                                'text': 'Secondary',
+                                                'background_color': 'transparent',
+                                                'button_text_color': '#666666',
+                                                'typography_typography': 'custom',
+                                                'typography_font_family': font,
+                                                'typography_font_size': {'unit': 'px', 'size': 14},
+                                                'typography_font_weight': '500',
+                                                'button_padding': {'unit': 'px', 'top': '12', 'right': '28', 'bottom': '12', 'left': '28'}
+                                            }
+                                        }
+                                    ]
+                                },
+                                # Filter fields
+                                {
+                                    'id': self._generate_id(),
+                                    'elType': 'widget',
+                                    'widgetType': 'text-editor',
+                                    'settings': {
+                                        'editor': '<p style="color: #999; font-size: 13px; margin-bottom: 8px;">Service type</p>',
+                                        'text_color': '#999999'
                                     }
                                 },
                                 {
                                     'id': self._generate_id(),
                                     'elType': 'widget',
+                                    'widgetType': 'text-editor',
+                                    'settings': {
+                                        'editor': '<p style="color: #1a1a2e; font-size: 15px; padding: 12px 0; border-bottom: 1px solid #eee;">Select service type ▾</p>',
+                                        '_margin': {'unit': 'px', 'top': '0', 'right': '0', 'bottom': '20', 'left': '0'}
+                                    }
+                                },
+                                {
+                                    'id': self._generate_id(),
+                                    'elType': 'widget',
+                                    'widgetType': 'text-editor',
+                                    'settings': {
+                                        'editor': '<p style="color: #999; font-size: 13px; margin-bottom: 8px;">Category</p>',
+                                        'text_color': '#999999'
+                                    }
+                                },
+                                {
+                                    'id': self._generate_id(),
+                                    'elType': 'widget',
+                                    'widgetType': 'text-editor',
+                                    'settings': {
+                                        'editor': '<p style="color: #1a1a2e; font-size: 15px; padding: 12px 0; border-bottom: 1px solid #eee;">Select category ▾</p>',
+                                        '_margin': {'unit': 'px', 'top': '0', 'right': '0', 'bottom': '30', 'left': '0'}
+                                    }
+                                },
+                                # Search button
+                                {
+                                    'id': self._generate_id(),
+                                    'elType': 'widget',
                                     'widgetType': 'button',
                                     'settings': {
-                                        'text': 'Watch Demo →',
-                                        'link': {'url': '#demo'},
-                                        'background_color': 'transparent',
-                                        'button_text_color': '#ffffff',
-                                        'border_border': 'solid',
-                                        'border_width': {'unit': 'px', 'top': '2', 'right': '2', 'bottom': '2', 'left': '2'},
-                                        'border_color': 'rgba(255,255,255,0.3)',
-                                        'border_radius': {'unit': 'px', 'size': 10},
+                                        'text': 'Search Services',
+                                        'link': {'url': '#search'},
+                                        'background_color': colors['cta_primary'],
+                                        'button_text_color': '#1a1a2e',
+                                        'border_radius': {'unit': 'px', 'size': 0},
                                         'typography_typography': 'custom',
                                         'typography_font_family': font,
-                                        'typography_font_size': {'unit': 'px', 'size': 17},
-                                        'typography_font_weight': '600',
-                                        'button_padding': {'unit': 'px', 'top': '16', 'right': '32', 'bottom': '16', 'left': '32'}
+                                        'typography_font_size': {'unit': 'px', 'size': 15},
+                                        'typography_font_weight': '500',
+                                        'button_padding': {'unit': 'px', 'top': '16', 'right': '0', 'bottom': '16', 'left': '0'},
+                                        'align': 'stretch'
                                     }
                                 }
                             ]
-                        },
-                        # Social proof
-                        {
-                            'id': self._generate_id(),
-                            'elType': 'widget',
-                            'widgetType': 'text-editor',
-                            'settings': {
-                                'editor': '<p style="text-align: center;">⭐⭐⭐⭐⭐ <strong>4.9/5</strong> from 2,000+ reviews</p>',
-                                'align': 'center',
-                                'text_color': 'rgba(255,255,255,0.7)',
-                                'typography_typography': 'custom',
-                                'typography_font_family': font,
-                                'typography_font_size': {'unit': 'px', 'size': 14},
-                                '_margin': {'unit': 'px', 'top': '40', 'right': '0', 'bottom': '0', 'left': '0'}
-                            }
                         }
                     ]
                 }
