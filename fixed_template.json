@@ -1,0 +1,1103 @@
+{
+  "content": [
+    {
+      "elType": "container",
+      "elements": [
+        {
+          "elType": "widget",
+          "id": "j6325u6",
+          "settings": {
+            "header_size": "h4",
+            "title": "Brand",
+            "title_color": "#0066cc",
+            "typography_font_family": "Montserrat",
+            "typography_font_size": {
+              "size": 24,
+              "unit": "px"
+            },
+            "typography_font_weight": "700",
+            "typography_typography": "custom"
+          },
+          "widgetType": "heading"
+        },
+        {
+          "elType": "container",
+          "elements": [
+            {
+              "elType": "widget",
+              "id": "tl3sew8",
+              "settings": {
+                "button_padding": {
+                  "bottom": "10",
+                  "left": "16",
+                  "right": "16",
+                  "top": "10",
+                  "unit": "px"
+                },
+                "button_text_color": "#333333",
+                "button_type": "link",
+                "hover_color": "#0066cc",
+                "link": {
+                  "url": "#home"
+                },
+                "text": "Home",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "size": 15,
+                  "unit": "px"
+                },
+                "typography_font_weight": "500",
+                "typography_typography": "custom"
+              },
+              "widgetType": "button"
+            },
+            {
+              "elType": "widget",
+              "id": "n25i5un",
+              "settings": {
+                "button_padding": {
+                  "bottom": "10",
+                  "left": "16",
+                  "right": "16",
+                  "top": "10",
+                  "unit": "px"
+                },
+                "button_text_color": "#333333",
+                "button_type": "link",
+                "hover_color": "#0066cc",
+                "link": {
+                  "url": "#services"
+                },
+                "text": "Services",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "size": 15,
+                  "unit": "px"
+                },
+                "typography_font_weight": "500",
+                "typography_typography": "custom"
+              },
+              "widgetType": "button"
+            },
+            {
+              "elType": "widget",
+              "id": "qskeukx",
+              "settings": {
+                "button_padding": {
+                  "bottom": "10",
+                  "left": "16",
+                  "right": "16",
+                  "top": "10",
+                  "unit": "px"
+                },
+                "button_text_color": "#333333",
+                "button_type": "link",
+                "hover_color": "#0066cc",
+                "link": {
+                  "url": "#about"
+                },
+                "text": "About",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "size": 15,
+                  "unit": "px"
+                },
+                "typography_font_weight": "500",
+                "typography_typography": "custom"
+              },
+              "widgetType": "button"
+            },
+            {
+              "elType": "widget",
+              "id": "dfknc2i",
+              "settings": {
+                "button_padding": {
+                  "bottom": "10",
+                  "left": "16",
+                  "right": "16",
+                  "top": "10",
+                  "unit": "px"
+                },
+                "button_text_color": "#333333",
+                "button_type": "link",
+                "hover_color": "#0066cc",
+                "link": {
+                  "url": "#contact"
+                },
+                "text": "Contact",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "size": 15,
+                  "unit": "px"
+                },
+                "typography_font_weight": "500",
+                "typography_typography": "custom"
+              },
+              "widgetType": "button"
+            },
+            {
+              "elType": "widget",
+              "id": "7imqbl1",
+              "settings": {
+                "background_color": "#0066cc",
+                "border_radius": {
+                  "size": 8,
+                  "unit": "px"
+                },
+                "button_padding": {
+                  "bottom": "12",
+                  "left": "24",
+                  "right": "24",
+                  "top": "12",
+                  "unit": "px"
+                },
+                "button_text_color": "#ffffff",
+                "link": {
+                  "url": "#contact"
+                },
+                "text": "Get Started",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "size": 14,
+                  "unit": "px"
+                },
+                "typography_font_weight": "600",
+                "typography_typography": "custom"
+              },
+              "widgetType": "button"
+            }
+          ],
+          "id": "f40zxh9",
+          "settings": {
+            "flex_align_items": "center",
+            "flex_direction": "row",
+            "flex_gap": {
+              "size": 8,
+              "unit": "px"
+            }
+          }
+        }
+      ],
+      "id": "tveumvz",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "box_shadow_box_shadow": {
+          "blur": 10,
+          "color": "rgba(0,0,0,0.05)",
+          "horizontal": 0,
+          "spread": 0,
+          "vertical": 2
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "content_width": "full",
+        "flex_align_items": "center",
+        "flex_direction": "row",
+        "flex_justify_content": "space-between",
+        "padding": {
+          "bottom": "15",
+          "left": "50",
+          "right": "50",
+          "top": "15",
+          "unit": "px"
+        },
+        "position": "fixed",
+        "z_index": 100
+      }
+    },
+    {
+      "elType": "container",
+      "elements": [
+        {
+          "elType": "widget",
+          "id": "di9kkh3",
+          "settings": {
+            "header_size": "h1",
+            "title": "and CTA button",
+            "title_color": "#333333",
+            "typography_font_family": "Montserrat",
+            "typography_font_size": {
+              "size": 64,
+              "unit": "px"
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+              "size": 1.2,
+              "unit": "em"
+            },
+            "typography_typography": "custom"
+          },
+          "widgetType": "heading"
+        },
+        {
+          "elType": "widget",
+          "id": "l72qoiz",
+          "settings": {
+            "_margin": {
+              "bottom": "30",
+              "left": "0",
+              "right": "0",
+              "top": "20",
+              "unit": "px"
+            },
+            "editor": "<p>We deliver innovative solutions to help you succeed.</p>",
+            "text_color": "#333333",
+            "typography_font_family": "Montserrat",
+            "typography_font_size": {
+              "size": 20,
+              "unit": "px"
+            },
+            "typography_typography": "custom"
+          },
+          "widgetType": "text-editor"
+        },
+        {
+          "elType": "widget",
+          "id": "fgi2rq5",
+          "settings": {
+            "background_color": "#0066cc",
+            "border_radius": {
+              "size": 8,
+              "unit": "px"
+            },
+            "button_padding": {
+              "bottom": "16",
+              "left": "32",
+              "right": "32",
+              "top": "16",
+              "unit": "px"
+            },
+            "button_text_color": "#ffffff",
+            "button_type": "primary",
+            "link": {
+              "url": "#contact"
+            },
+            "text": "button",
+            "typography_font_family": "Montserrat",
+            "typography_font_weight": "600",
+            "typography_typography": "custom"
+          },
+          "widgetType": "button"
+        }
+      ],
+      "id": "h6yiydt",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "boxed_width": {
+          "size": 1200,
+          "unit": "px"
+        },
+        "content_width": "boxed",
+        "flex_align_items": "flex-start",
+        "flex_direction": "column",
+        "flex_justify_content": "center",
+        "min_height": {
+          "size": 80,
+          "unit": "vh"
+        },
+        "padding": {
+          "bottom": "80",
+          "left": "50",
+          "right": "50",
+          "top": "80",
+          "unit": "px"
+        }
+      }
+    },
+    {
+      "elType": "container",
+      "elements": [
+        {
+          "elType": "widget",
+          "id": "na15hde",
+          "settings": {
+            "_margin": {
+              "bottom": "50",
+              "left": "0",
+              "right": "0",
+              "top": "0",
+              "unit": "px"
+            },
+            "align": "center",
+            "header_size": "h2",
+            "title": "Services",
+            "title_color": "#333333",
+            "typography_font_family": "Montserrat",
+            "typography_font_size": {
+              "size": 42,
+              "unit": "px"
+            },
+            "typography_font_weight": "700",
+            "typography_typography": "custom"
+          },
+          "widgetType": "heading"
+        },
+        {
+          "elType": "container",
+          "elements": [
+            {
+              "elType": "container",
+              "elements": [
+                {
+                  "elType": "widget",
+                  "id": "eeln9k5",
+                  "settings": {
+                    "description_color": "#333333",
+                    "description_text": "Description of service 1",
+                    "description_typography_font_family": "Montserrat",
+                    "description_typography_typography": "custom",
+                    "position": "top",
+                    "primary_color": "#0066cc",
+                    "selected_icon": {
+                      "library": "fa-solid",
+                      "value": "fas fa-rocket"
+                    },
+                    "title_color": "#333333",
+                    "title_text": "Service 1",
+                    "title_typography_font_family": "Montserrat",
+                    "title_typography_font_weight": "600",
+                    "title_typography_typography": "custom"
+                  },
+                  "widgetType": "icon-box"
+                }
+              ],
+              "id": "4xvipt8",
+              "settings": {
+                "padding": {
+                  "bottom": "30",
+                  "left": "20",
+                  "right": "20",
+                  "top": "30",
+                  "unit": "px"
+                },
+                "width": {
+                  "size": 33,
+                  "unit": "%"
+                }
+              }
+            },
+            {
+              "elType": "container",
+              "elements": [
+                {
+                  "elType": "widget",
+                  "id": "po8h4q5",
+                  "settings": {
+                    "description_color": "#333333",
+                    "description_text": "Description of service 2",
+                    "description_typography_font_family": "Montserrat",
+                    "description_typography_typography": "custom",
+                    "position": "top",
+                    "primary_color": "#0066cc",
+                    "selected_icon": {
+                      "library": "fa-solid",
+                      "value": "fas fa-cog"
+                    },
+                    "title_color": "#333333",
+                    "title_text": "Service 2",
+                    "title_typography_font_family": "Montserrat",
+                    "title_typography_font_weight": "600",
+                    "title_typography_typography": "custom"
+                  },
+                  "widgetType": "icon-box"
+                }
+              ],
+              "id": "mjvilk8",
+              "settings": {
+                "padding": {
+                  "bottom": "30",
+                  "left": "20",
+                  "right": "20",
+                  "top": "30",
+                  "unit": "px"
+                },
+                "width": {
+                  "size": 33,
+                  "unit": "%"
+                }
+              }
+            },
+            {
+              "elType": "container",
+              "elements": [
+                {
+                  "elType": "widget",
+                  "id": "vf6kd21",
+                  "settings": {
+                    "description_color": "#333333",
+                    "description_text": "Description of service 3",
+                    "description_typography_font_family": "Montserrat",
+                    "description_typography_typography": "custom",
+                    "position": "top",
+                    "primary_color": "#0066cc",
+                    "selected_icon": {
+                      "library": "fa-solid",
+                      "value": "fas fa-chart-line"
+                    },
+                    "title_color": "#333333",
+                    "title_text": "Service 3",
+                    "title_typography_font_family": "Montserrat",
+                    "title_typography_font_weight": "600",
+                    "title_typography_typography": "custom"
+                  },
+                  "widgetType": "icon-box"
+                }
+              ],
+              "id": "w73sol4",
+              "settings": {
+                "padding": {
+                  "bottom": "30",
+                  "left": "20",
+                  "right": "20",
+                  "top": "30",
+                  "unit": "px"
+                },
+                "width": {
+                  "size": 33,
+                  "unit": "%"
+                }
+              }
+            }
+          ],
+          "id": "y0h65xx",
+          "settings": {
+            "flex_direction": "row",
+            "flex_gap": {
+              "size": 30,
+              "unit": "px"
+            },
+            "flex_justify_content": "center",
+            "flex_wrap": "wrap"
+          }
+        }
+      ],
+      "id": "87w5f7i",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "boxed_width": {
+          "size": 1200,
+          "unit": "px"
+        },
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "padding": {
+          "bottom": "80",
+          "left": "30",
+          "right": "30",
+          "top": "80",
+          "unit": "px"
+        }
+      }
+    },
+    {
+      "elType": "container",
+      "elements": [
+        {
+          "elType": "widget",
+          "id": "ptwu0yi",
+          "settings": {
+            "_margin": {
+              "bottom": "50",
+              "left": "0",
+              "right": "0",
+              "top": "0",
+              "unit": "px"
+            },
+            "align": "center",
+            "header_size": "h2",
+            "title": "Testimonials",
+            "title_color": "#333333",
+            "typography_font_family": "Montserrat",
+            "typography_font_size": {
+              "size": 42,
+              "unit": "px"
+            },
+            "typography_font_weight": "700",
+            "typography_typography": "custom"
+          },
+          "widgetType": "heading"
+        },
+        {
+          "elType": "container",
+          "elements": [
+            {
+              "elType": "container",
+              "elements": [
+                {
+                  "elType": "widget",
+                  "id": "3gdf627",
+                  "settings": {
+                    "content_content_color": "#333333",
+                    "content_typography_font_family": "Montserrat",
+                    "content_typography_typography": "custom",
+                    "name_text_color": "#333333",
+                    "name_typography_font_family": "Montserrat",
+                    "name_typography_font_weight": "600",
+                    "name_typography_typography": "custom",
+                    "testimonial_alignment": "center",
+                    "testimonial_content": "Great service!",
+                    "testimonial_job": "CEO",
+                    "testimonial_name": "John Doe",
+                    "title_text_color": "#333333"
+                  },
+                  "widgetType": "testimonial"
+                }
+              ],
+              "id": "d0son7u",
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#ffffff",
+                "border_radius": {
+                  "size": 12,
+                  "unit": "px"
+                },
+                "box_shadow_box_shadow": {
+                  "blur": 20,
+                  "color": "rgba(0,0,0,0.08)",
+                  "horizontal": 0,
+                  "spread": 0,
+                  "vertical": 4
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "padding": {
+                  "bottom": "30",
+                  "left": "25",
+                  "right": "25",
+                  "top": "30",
+                  "unit": "px"
+                },
+                "width": {
+                  "size": 33,
+                  "unit": "%"
+                }
+              }
+            },
+            {
+              "elType": "container",
+              "elements": [
+                {
+                  "elType": "widget",
+                  "id": "indj88r",
+                  "settings": {
+                    "content_content_color": "#333333",
+                    "content_typography_font_family": "Montserrat",
+                    "content_typography_typography": "custom",
+                    "name_text_color": "#333333",
+                    "name_typography_font_family": "Montserrat",
+                    "name_typography_font_weight": "600",
+                    "name_typography_typography": "custom",
+                    "testimonial_alignment": "center",
+                    "testimonial_content": "Highly recommended!",
+                    "testimonial_job": "Manager",
+                    "testimonial_name": "Jane Smith",
+                    "title_text_color": "#333333"
+                  },
+                  "widgetType": "testimonial"
+                }
+              ],
+              "id": "c8lq5fs",
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#ffffff",
+                "border_radius": {
+                  "size": 12,
+                  "unit": "px"
+                },
+                "box_shadow_box_shadow": {
+                  "blur": 20,
+                  "color": "rgba(0,0,0,0.08)",
+                  "horizontal": 0,
+                  "spread": 0,
+                  "vertical": 4
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "padding": {
+                  "bottom": "30",
+                  "left": "25",
+                  "right": "25",
+                  "top": "30",
+                  "unit": "px"
+                },
+                "width": {
+                  "size": 33,
+                  "unit": "%"
+                }
+              }
+            },
+            {
+              "elType": "container",
+              "elements": [
+                {
+                  "elType": "widget",
+                  "id": "7bkxwkf",
+                  "settings": {
+                    "content_content_color": "#333333",
+                    "content_typography_font_family": "Montserrat",
+                    "content_typography_typography": "custom",
+                    "name_text_color": "#333333",
+                    "name_typography_font_family": "Montserrat",
+                    "name_typography_font_weight": "600",
+                    "name_typography_typography": "custom",
+                    "testimonial_alignment": "center",
+                    "testimonial_content": "Exceeded expectations!",
+                    "testimonial_job": "Director",
+                    "testimonial_name": "Bob Johnson",
+                    "title_text_color": "#333333"
+                  },
+                  "widgetType": "testimonial"
+                }
+              ],
+              "id": "gjrpxju",
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#ffffff",
+                "border_radius": {
+                  "size": 12,
+                  "unit": "px"
+                },
+                "box_shadow_box_shadow": {
+                  "blur": 20,
+                  "color": "rgba(0,0,0,0.08)",
+                  "horizontal": 0,
+                  "spread": 0,
+                  "vertical": 4
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "padding": {
+                  "bottom": "30",
+                  "left": "25",
+                  "right": "25",
+                  "top": "30",
+                  "unit": "px"
+                },
+                "width": {
+                  "size": 33,
+                  "unit": "%"
+                }
+              }
+            }
+          ],
+          "id": "bxzlge5",
+          "settings": {
+            "flex_direction": "row",
+            "flex_gap": {
+              "size": 30,
+              "unit": "px"
+            },
+            "flex_justify_content": "center",
+            "flex_wrap": "wrap"
+          }
+        }
+      ],
+      "id": "0xaokk4",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f8f9fa",
+        "boxed_width": {
+          "size": 1200,
+          "unit": "px"
+        },
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "padding": {
+          "bottom": "80",
+          "left": "30",
+          "right": "30",
+          "top": "80",
+          "unit": "px"
+        }
+      }
+    },
+    {
+      "elType": "container",
+      "elements": [
+        {
+          "elType": "container",
+          "elements": [
+            {
+              "elType": "widget",
+              "id": "u7inne2",
+              "settings": {
+                "header_size": "h2",
+                "title": "Contact",
+                "title_color": "#333333",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {
+                  "size": 42,
+                  "unit": "px"
+                },
+                "typography_font_weight": "700",
+                "typography_typography": "custom"
+              },
+              "widgetType": "heading"
+            },
+            {
+              "elType": "widget",
+              "id": "1e4rmup",
+              "settings": {
+                "_margin": {
+                  "bottom": "30",
+                  "left": "0",
+                  "right": "0",
+                  "top": "20",
+                  "unit": "px"
+                },
+                "editor": "<p>Have a question? We would love to hear from you.</p>",
+                "text_color": "#333333"
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "elType": "widget",
+              "id": "muykcyx",
+              "settings": {
+                "icon_color": "#0066cc",
+                "icon_list": [
+                  {
+                    "selected_icon": {
+                      "library": "fa-solid",
+                      "value": "fas fa-envelope"
+                    },
+                    "text": "hello@example.com"
+                  },
+                  {
+                    "selected_icon": {
+                      "library": "fa-solid",
+                      "value": "fas fa-phone"
+                    },
+                    "text": "+1 234 567 890"
+                  },
+                  {
+                    "selected_icon": {
+                      "library": "fa-solid",
+                      "value": "fas fa-map-marker-alt"
+                    },
+                    "text": "123 Business St, City"
+                  }
+                ],
+                "text_color": "#333333"
+              },
+              "widgetType": "icon-list"
+            }
+          ],
+          "id": "pr873q5",
+          "settings": {
+            "width": {
+              "size": 50,
+              "unit": "%"
+            }
+          }
+        },
+        {
+          "elType": "container",
+          "elements": [
+            {
+              "elType": "widget",
+              "id": "kr71wf0",
+              "settings": {
+                "button_background_color": "#0066cc",
+                "button_color": "#ffffff",
+                "button_text": "Send Message",
+                "form_fields": [
+                  {
+                    "custom_id": "name",
+                    "field_label": "Name",
+                    "field_type": "text",
+                    "placeholder": "Your Name",
+                    "required": "yes",
+                    "width": "50"
+                  },
+                  {
+                    "custom_id": "email",
+                    "field_label": "Email",
+                    "field_type": "email",
+                    "placeholder": "Your Email",
+                    "required": "yes",
+                    "width": "50"
+                  },
+                  {
+                    "custom_id": "message",
+                    "field_label": "Message",
+                    "field_type": "textarea",
+                    "placeholder": "Your Message",
+                    "required": "yes",
+                    "rows": 5
+                  }
+                ],
+                "form_name": "Contact Form"
+              },
+              "widgetType": "form"
+            }
+          ],
+          "id": "srzkz4s",
+          "settings": {
+            "background_background": "classic",
+            "background_color": "#f8f9fa",
+            "border_radius": {
+              "size": 12,
+              "unit": "px"
+            },
+            "padding": {
+              "bottom": "40",
+              "left": "40",
+              "right": "40",
+              "top": "40",
+              "unit": "px"
+            },
+            "width": {
+              "size": 50,
+              "unit": "%"
+            }
+          }
+        }
+      ],
+      "id": "fsgy8d7",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "boxed_width": {
+          "size": 1200,
+          "unit": "px"
+        },
+        "content_width": "boxed",
+        "flex_direction": "row",
+        "flex_gap": {
+          "size": 60,
+          "unit": "px"
+        },
+        "padding": {
+          "bottom": "80",
+          "left": "30",
+          "right": "30",
+          "top": "80",
+          "unit": "px"
+        }
+      }
+    },
+    {
+      "elType": "container",
+      "elements": [
+        {
+          "elType": "widget",
+          "id": "3p316wp",
+          "settings": {
+            "align": "center",
+            "header_size": "h2",
+            "title": "Cta",
+            "title_color": "#ffffff",
+            "typography_font_family": "Montserrat",
+            "typography_font_size": {
+              "size": 42,
+              "unit": "px"
+            },
+            "typography_font_weight": "700",
+            "typography_typography": "custom"
+          },
+          "widgetType": "heading"
+        },
+        {
+          "elType": "widget",
+          "id": "qegxoxf",
+          "settings": {
+            "_margin": {
+              "bottom": "30",
+              "left": "0",
+              "right": "0",
+              "top": "15",
+              "unit": "px"
+            },
+            "align": "center",
+            "editor": "<p>Contact us today.</p>",
+            "text_color": "rgba(255,255,255,0.9)",
+            "typography_font_family": "Montserrat",
+            "typography_font_size": {
+              "size": 18,
+              "unit": "px"
+            },
+            "typography_typography": "custom"
+          },
+          "widgetType": "text-editor"
+        },
+        {
+          "elType": "widget",
+          "id": "25wa7t4",
+          "settings": {
+            "background_color": "#ffffff",
+            "border_radius": {
+              "size": 8,
+              "unit": "px"
+            },
+            "button_padding": {
+              "bottom": "16",
+              "left": "40",
+              "right": "40",
+              "top": "16",
+              "unit": "px"
+            },
+            "button_text_color": "#0066cc",
+            "link": {
+              "url": "#contact"
+            },
+            "text": "Contact Us",
+            "typography_font_family": "Montserrat",
+            "typography_font_weight": "600",
+            "typography_typography": "custom"
+          },
+          "widgetType": "button"
+        }
+      ],
+      "id": "eie8h3l",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#0066cc",
+        "boxed_width": {
+          "size": 900,
+          "unit": "px"
+        },
+        "content_width": "boxed",
+        "flex_align_items": "center",
+        "flex_direction": "column",
+        "padding": {
+          "bottom": "80",
+          "left": "30",
+          "right": "30",
+          "top": "80",
+          "unit": "px"
+        }
+      }
+    },
+    {
+      "elType": "container",
+      "elements": [
+        {
+          "elType": "container",
+          "elements": [
+            {
+              "elType": "widget",
+              "id": "s10vy0u",
+              "settings": {
+                "header_size": "h4",
+                "title": "Brand",
+                "title_color": "#ffffff",
+                "typography_font_family": "Montserrat",
+                "typography_font_weight": "700",
+                "typography_typography": "custom"
+              },
+              "widgetType": "heading"
+            },
+            {
+              "elType": "widget",
+              "id": "glerir7",
+              "settings": {
+                "_margin": {
+                  "bottom": "0",
+                  "left": "0",
+                  "right": "0",
+                  "top": "15",
+                  "unit": "px"
+                },
+                "editor": "<p>Building exceptional digital experiences.</p>",
+                "text_color": "rgba(255,255,255,0.7)"
+              },
+              "widgetType": "text-editor"
+            }
+          ],
+          "id": "8shnbwk",
+          "settings": {
+            "width": {
+              "size": 30,
+              "unit": "%"
+            }
+          }
+        },
+        {
+          "elType": "container",
+          "elements": [
+            {
+              "elType": "widget",
+              "id": "uvk0rgu",
+              "settings": {
+                "icon_color": "custom",
+                "icon_primary_color": "rgba(255,255,255,0.7)",
+                "social_icon_list": [
+                  {
+                    "link": {
+                      "url": "#"
+                    },
+                    "social_icon": {
+                      "library": "fa-brands",
+                      "value": "fab fa-facebook-f"
+                    }
+                  },
+                  {
+                    "link": {
+                      "url": "#"
+                    },
+                    "social_icon": {
+                      "library": "fa-brands",
+                      "value": "fab fa-twitter"
+                    }
+                  },
+                  {
+                    "link": {
+                      "url": "#"
+                    },
+                    "social_icon": {
+                      "library": "fa-brands",
+                      "value": "fab fa-instagram"
+                    }
+                  },
+                  {
+                    "link": {
+                      "url": "#"
+                    },
+                    "social_icon": {
+                      "library": "fa-brands",
+                      "value": "fab fa-linkedin-in"
+                    }
+                  }
+                ]
+              },
+              "widgetType": "social-icons"
+            }
+          ],
+          "id": "f05iefq",
+          "settings": {
+            "width": {
+              "size": 25,
+              "unit": "%"
+            }
+          }
+        }
+      ],
+      "id": "7f2f1s0",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1a1a1a",
+        "boxed_width": {
+          "size": 1200,
+          "unit": "px"
+        },
+        "content_width": "boxed",
+        "flex_direction": "row",
+        "flex_justify_content": "space-between",
+        "flex_wrap": "wrap",
+        "padding": {
+          "bottom": "40",
+          "left": "30",
+          "right": "30",
+          "top": "60",
+          "unit": "px"
+        }
+      }
+    }
+  ],
+  "page_settings": {
+    "hide_title": "yes",
+    "template": "elementor_canvas"
+  },
+  "type": "page",
+  "version": "0.4"
+}

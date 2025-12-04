@@ -26,6 +26,8 @@ class ElementorProGenerator:
 
         if design_spec.get('hero'):
             sections.append(self._create_hero_section(design_spec))
+            # Always add stats section after hero for impact
+            sections.append(self._create_stats_section(design_spec, {}))
 
         for section in design_spec.get('sections', []):
             section_type = section.get('type', 'generic')
@@ -194,116 +196,207 @@ class ElementorProGenerator:
         }
 
     def _create_hero_section(self, design_spec):
-        """Create hero section with heading, subtext, and CTA"""
+        """Create hero section with gradient background, heading, subtext, and CTA"""
         colors = self._get_colors(design_spec)
         font = self._get_fonts(design_spec)
         spacing = self._get_spacing(design_spec)
         btn_style = self._get_button_style(design_spec)
         hero = design_spec.get('hero', {})
 
+        # Create gradient from primary color
+        primary = colors['primary']
+
         return {
             'id': self._generate_id(),
             'elType': 'container',
             'settings': {
-                'content_width': 'boxed',
-                'boxed_width': {'unit': 'px', 'size': 1200},
-                'min_height': {'unit': 'vh', 'size': 80},
+                'content_width': 'full',
+                'min_height': {'unit': 'vh', 'size': 100},
                 'flex_direction': 'column',
                 'flex_justify_content': 'center',
-                'flex_align_items': 'flex-start',
-                'padding': {'unit': 'px', 'top': spacing.get('section_padding', '100'), 'right': '50', 'bottom': spacing.get('section_padding', '100'), 'left': '50'},
-                'background_background': 'classic',
-                'background_color': hero.get('background_color', colors['background'])
+                'flex_align_items': 'center',
+                'padding': {'unit': 'px', 'top': '120', 'right': '50', 'bottom': '100', 'left': '50'},
+                'background_background': 'gradient',
+                'background_color': primary,
+                'background_color_b': '#1a1a2e',
+                'background_gradient_type': 'linear',
+                'background_gradient_angle': {'unit': 'deg', 'size': 135},
+                'background_gradient_position': 'center center'
             },
             'elements': [
                 {
                     'id': self._generate_id(),
-                    'elType': 'widget',
-                    'widgetType': 'heading',
+                    'elType': 'container',
                     'settings': {
-                        'title': hero.get('headline', 'Transform Your Business'),
-                        'header_size': 'h1',
-                        'title_color': colors['text'],
-                        'typography_typography': 'custom',
-                        'typography_font_family': font,
-                        'typography_font_size': {'unit': 'px', 'size': 64},
-                        'typography_font_weight': '700',
-                        'typography_line_height': {'unit': 'em', 'size': 1.2}
-                    }
-                },
-                {
-                    'id': self._generate_id(),
-                    'elType': 'widget',
-                    'widgetType': 'text-editor',
-                    'settings': {
-                        'editor': f"<p>{hero.get('subheadline', 'We help businesses grow with innovative solutions.')}</p>",
-                        'text_color': colors['secondary'],
-                        'typography_typography': 'custom',
-                        'typography_font_family': font,
-                        'typography_font_size': {'unit': 'px', 'size': 20},
-                        '_margin': {'unit': 'px', 'top': '20', 'right': '0', 'bottom': '30', 'left': '0'}
-                    }
-                },
-                {
-                    'id': self._generate_id(),
-                    'elType': 'widget',
-                    'widgetType': 'button',
-                    'settings': {
-                        'text': hero.get('cta_text', 'Get Started'),
-                        'link': {'url': hero.get('cta_link', '#contact')},
-                        'button_type': 'primary',
-                        'background_color': colors['primary'],
-                        'button_text_color': '#ffffff',
-                        'border_radius': {'unit': 'px', 'size': int(btn_style.get('border_radius', '8').replace('px', ''))},
-                        'typography_typography': 'custom',
-                        'typography_font_family': font,
-                        'typography_font_weight': '600',
-                        'button_padding': {'unit': 'px', 'top': '16', 'right': '32', 'bottom': '16', 'left': '32'}
-                    }
+                        'content_width': 'boxed',
+                        'boxed_width': {'unit': 'px', 'size': 900},
+                        'flex_direction': 'column',
+                        'flex_align_items': 'center'
+                    },
+                    'elements': [
+                        {
+                            'id': self._generate_id(),
+                            'elType': 'widget',
+                            'widgetType': 'heading',
+                            'settings': {
+                                'title': hero.get('headline', 'Transform Your Business Today'),
+                                'header_size': 'h1',
+                                'align': 'center',
+                                'title_color': '#ffffff',
+                                'typography_typography': 'custom',
+                                'typography_font_family': font,
+                                'typography_font_size': {'unit': 'px', 'size': 56},
+                                'typography_font_size_tablet': {'unit': 'px', 'size': 42},
+                                'typography_font_size_mobile': {'unit': 'px', 'size': 32},
+                                'typography_font_weight': '700',
+                                'typography_line_height': {'unit': 'em', 'size': 1.2}
+                            }
+                        },
+                        {
+                            'id': self._generate_id(),
+                            'elType': 'widget',
+                            'widgetType': 'text-editor',
+                            'settings': {
+                                'editor': f"<p style='text-align: center;'>{hero.get('subheadline', 'We help businesses grow with innovative digital solutions that drive real results.')}</p>",
+                                'align': 'center',
+                                'text_color': 'rgba(255,255,255,0.9)',
+                                'typography_typography': 'custom',
+                                'typography_font_family': font,
+                                'typography_font_size': {'unit': 'px', 'size': 20},
+                                '_margin': {'unit': 'px', 'top': '25', 'right': '0', 'bottom': '40', 'left': '0'}
+                            }
+                        },
+                        {
+                            'id': self._generate_id(),
+                            'elType': 'container',
+                            'settings': {
+                                'flex_direction': 'row',
+                                'flex_gap': {'unit': 'px', 'size': 16},
+                                'flex_justify_content': 'center'
+                            },
+                            'elements': [
+                                {
+                                    'id': self._generate_id(),
+                                    'elType': 'widget',
+                                    'widgetType': 'button',
+                                    'settings': {
+                                        'text': hero.get('cta_text', 'Get Started Free'),
+                                        'link': {'url': hero.get('cta_link', '#contact')},
+                                        'background_color': '#ffffff',
+                                        'button_text_color': primary,
+                                        'border_radius': {'unit': 'px', 'size': int(btn_style.get('border_radius', '8').replace('px', ''))},
+                                        'typography_typography': 'custom',
+                                        'typography_font_family': font,
+                                        'typography_font_weight': '600',
+                                        'typography_font_size': {'unit': 'px', 'size': 16},
+                                        'button_padding': {'unit': 'px', 'top': '18', 'right': '36', 'bottom': '18', 'left': '36'},
+                                        'hover_color': '#ffffff',
+                                        'button_background_hover_color': 'rgba(255,255,255,0.9)'
+                                    }
+                                },
+                                {
+                                    'id': self._generate_id(),
+                                    'elType': 'widget',
+                                    'widgetType': 'button',
+                                    'settings': {
+                                        'text': 'Learn More',
+                                        'link': {'url': '#services'},
+                                        'button_type': 'outline',
+                                        'background_color': 'transparent',
+                                        'button_text_color': '#ffffff',
+                                        'border_border': 'solid',
+                                        'border_width': {'unit': 'px', 'top': '2', 'right': '2', 'bottom': '2', 'left': '2'},
+                                        'border_color': '#ffffff',
+                                        'border_radius': {'unit': 'px', 'size': int(btn_style.get('border_radius', '8').replace('px', ''))},
+                                        'typography_typography': 'custom',
+                                        'typography_font_family': font,
+                                        'typography_font_weight': '600',
+                                        'typography_font_size': {'unit': 'px', 'size': 16},
+                                        'button_padding': {'unit': 'px', 'top': '16', 'right': '32', 'bottom': '16', 'left': '32'}
+                                    }
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }
 
     def _create_services_section(self, design_spec, section_spec):
-        """Create services section with icon boxes"""
+        """Create services section with styled icon box cards"""
         colors = self._get_colors(design_spec)
         font = self._get_fonts(design_spec)
         spacing = self._get_spacing(design_spec)
 
         services = section_spec.get('items', [
-            {'title': 'Service 1', 'description': 'Description of service 1', 'icon': 'fas fa-rocket'},
-            {'title': 'Service 2', 'description': 'Description of service 2', 'icon': 'fas fa-cog'},
-            {'title': 'Service 3', 'description': 'Description of service 3', 'icon': 'fas fa-chart-line'}
+            {'title': 'Web Development', 'description': 'Custom websites built with modern technologies that drive results and engage your audience.', 'icon': 'fas fa-code'},
+            {'title': 'Digital Marketing', 'description': 'Strategic marketing campaigns that increase visibility and generate qualified leads.', 'icon': 'fas fa-bullhorn'},
+            {'title': 'Brand Strategy', 'description': 'Comprehensive branding solutions that differentiate you from the competition.', 'icon': 'fas fa-lightbulb'},
+            {'title': 'SEO Optimization', 'description': 'Data-driven SEO strategies to improve your search rankings and organic traffic.', 'icon': 'fas fa-search'},
+            {'title': 'UI/UX Design', 'description': 'User-centered design that creates intuitive and engaging digital experiences.', 'icon': 'fas fa-palette'},
+            {'title': 'Analytics & Insights', 'description': 'Actionable insights from your data to make informed business decisions.', 'icon': 'fas fa-chart-bar'}
         ])
 
         service_widgets = []
-        for service in services:
+        for i, service in enumerate(services):
             service_widgets.append({
                 'id': self._generate_id(),
                 'elType': 'container',
                 'settings': {
-                    'width': {'unit': '%', 'size': 33},
-                    'padding': {'unit': 'px', 'top': '30', 'right': '20', 'bottom': '30', 'left': '20'}
+                    'width': {'unit': '%', 'size': 30},
+                    'min_width': {'unit': 'px', 'size': 300},
+                    'padding': {'unit': 'px', 'top': '40', 'right': '30', 'bottom': '40', 'left': '30'},
+                    'background_background': 'classic',
+                    'background_color': '#ffffff',
+                    'border_radius': {'unit': 'px', 'size': 16},
+                    'box_shadow_box_shadow_type': 'yes',
+                    'box_shadow_box_shadow': {'horizontal': 0, 'vertical': 8, 'blur': 30, 'spread': 0, 'color': 'rgba(0,0,0,0.08)'},
+                    'flex_direction': 'column',
+                    'flex_align_items': 'center'
                 },
-                'elements': [{
-                    'id': self._generate_id(),
-                    'elType': 'widget',
-                    'widgetType': 'icon-box',
-                    'settings': {
-                        'selected_icon': {'value': service.get('icon', 'fas fa-star'), 'library': 'fa-solid'},
-                        'title_text': service.get('title', 'Service'),
-                        'description_text': service.get('description', 'Service description'),
-                        'position': 'top',
-                        'primary_color': colors['primary'],
-                        'title_color': colors['text'],
-                        'description_color': colors['secondary'],
-                        'title_typography_typography': 'custom',
-                        'title_typography_font_family': font,
-                        'title_typography_font_weight': '600',
-                        'description_typography_typography': 'custom',
-                        'description_typography_font_family': font
+                'elements': [
+                    {
+                        'id': self._generate_id(),
+                        'elType': 'widget',
+                        'widgetType': 'icon',
+                        'settings': {
+                            'selected_icon': {'value': service.get('icon', 'fas fa-star'), 'library': 'fa-solid'},
+                            'primary_color': colors['primary'],
+                            'icon_size': {'unit': 'px', 'size': 48},
+                            '_margin': {'unit': 'px', 'top': '0', 'right': '0', 'bottom': '25', 'left': '0'}
+                        }
+                    },
+                    {
+                        'id': self._generate_id(),
+                        'elType': 'widget',
+                        'widgetType': 'heading',
+                        'settings': {
+                            'title': service.get('title', 'Service'),
+                            'header_size': 'h4',
+                            'align': 'center',
+                            'title_color': colors['text'],
+                            'typography_typography': 'custom',
+                            'typography_font_family': font,
+                            'typography_font_size': {'unit': 'px', 'size': 22},
+                            'typography_font_weight': '600',
+                            '_margin': {'unit': 'px', 'top': '0', 'right': '0', 'bottom': '15', 'left': '0'}
+                        }
+                    },
+                    {
+                        'id': self._generate_id(),
+                        'elType': 'widget',
+                        'widgetType': 'text-editor',
+                        'settings': {
+                            'editor': f"<p style='text-align: center;'>{service.get('description', 'Service description')}</p>",
+                            'align': 'center',
+                            'text_color': '#666666',
+                            'typography_typography': 'custom',
+                            'typography_font_family': font,
+                            'typography_font_size': {'unit': 'px', 'size': 15},
+                            'typography_line_height': {'unit': 'em', 'size': 1.7}
+                        }
                     }
-                }]
+                ]
             })
 
         return {
@@ -313,9 +406,9 @@ class ElementorProGenerator:
                 'content_width': 'boxed',
                 'boxed_width': {'unit': 'px', 'size': 1200},
                 'flex_direction': 'column',
-                'padding': {'unit': 'px', 'top': spacing.get('section_padding', '80'), 'right': '30', 'bottom': spacing.get('section_padding', '80'), 'left': '30'},
+                'padding': {'unit': 'px', 'top': '100', 'right': '30', 'bottom': '100', 'left': '30'},
                 'background_background': 'classic',
-                'background_color': section_spec.get('background_color', colors['background'])
+                'background_color': '#f8f9fc'
             },
             'elements': [
                 {
@@ -323,15 +416,28 @@ class ElementorProGenerator:
                     'elType': 'widget',
                     'widgetType': 'heading',
                     'settings': {
-                        'title': section_spec.get('title', 'Our Services'),
+                        'title': section_spec.get('title', 'What We Do'),
                         'header_size': 'h2',
                         'align': 'center',
                         'title_color': colors['text'],
                         'typography_typography': 'custom',
                         'typography_font_family': font,
                         'typography_font_size': {'unit': 'px', 'size': 42},
-                        'typography_font_weight': '700',
-                        '_margin': {'unit': 'px', 'top': '0', 'right': '0', 'bottom': '50', 'left': '0'}
+                        'typography_font_weight': '700'
+                    }
+                },
+                {
+                    'id': self._generate_id(),
+                    'elType': 'widget',
+                    'widgetType': 'text-editor',
+                    'settings': {
+                        'editor': '<p style="text-align: center;">We offer comprehensive solutions to help your business thrive in the digital age.</p>',
+                        'align': 'center',
+                        'text_color': '#666666',
+                        'typography_typography': 'custom',
+                        'typography_font_family': font,
+                        'typography_font_size': {'unit': 'px', 'size': 18},
+                        '_margin': {'unit': 'px', 'top': '15', 'right': '0', 'bottom': '60', 'left': '0'}
                     }
                 },
                 {
@@ -964,58 +1070,119 @@ class ElementorProGenerator:
         }
 
     def _create_stats_section(self, design_spec, section_spec):
-        """Create statistics section"""
+        """Create statistics section with animated counters"""
         colors = self._get_colors(design_spec)
         font = self._get_fonts(design_spec)
         spacing = self._get_spacing(design_spec)
 
         stats = section_spec.get('items', [
-            {'number': '500+', 'label': 'Clients'},
-            {'number': '1000+', 'label': 'Projects'},
-            {'number': '50+', 'label': 'Awards'},
-            {'number': '10+', 'label': 'Years'}
+            {'number': '500+', 'label': 'Happy Clients'},
+            {'number': '1200+', 'label': 'Projects Completed'},
+            {'number': '98%', 'label': 'Success Rate'},
+            {'number': '24/7', 'label': 'Support Available'}
         ])
 
         stat_widgets = []
         for stat in stats:
+            # Extract number and suffix
+            num_str = stat.get('number', '100')
+            num_only = ''.join(filter(str.isdigit, num_str)) or '100'
+            suffix = ''
+            if '+' in num_str:
+                suffix = '+'
+            elif '%' in num_str:
+                suffix = '%'
+            elif '/' in num_str:
+                # Handle 24/7 format - use heading widget instead
+                stat_widgets.append({
+                    'id': self._generate_id(),
+                    'elType': 'container',
+                    'settings': {
+                        'width': {'unit': '%', 'size': 25},
+                        'flex_direction': 'column',
+                        'flex_align_items': 'center',
+                        'padding': {'unit': 'px', 'top': '20', 'right': '20', 'bottom': '20', 'left': '20'}
+                    },
+                    'elements': [
+                        {
+                            'id': self._generate_id(),
+                            'elType': 'widget',
+                            'widgetType': 'heading',
+                            'settings': {
+                                'title': num_str,
+                                'header_size': 'h2',
+                                'align': 'center',
+                                'title_color': '#ffffff',
+                                'typography_typography': 'custom',
+                                'typography_font_family': font,
+                                'typography_font_size': {'unit': 'px', 'size': 56},
+                                'typography_font_weight': '700'
+                            }
+                        },
+                        {
+                            'id': self._generate_id(),
+                            'elType': 'widget',
+                            'widgetType': 'heading',
+                            'settings': {
+                                'title': stat.get('label', 'Stat'),
+                                'header_size': 'h5',
+                                'align': 'center',
+                                'title_color': 'rgba(255,255,255,0.85)',
+                                'typography_typography': 'custom',
+                                'typography_font_family': font,
+                                'typography_font_size': {'unit': 'px', 'size': 16},
+                                'typography_font_weight': '500',
+                                '_margin': {'unit': 'px', 'top': '10', 'right': '0', 'bottom': '0', 'left': '0'}
+                            }
+                        }
+                    ]
+                })
+                continue
+
             stat_widgets.append({
                 'id': self._generate_id(),
                 'elType': 'container',
                 'settings': {
                     'width': {'unit': '%', 'size': 25},
                     'flex_direction': 'column',
-                    'flex_align_items': 'center'
+                    'flex_align_items': 'center',
+                    'padding': {'unit': 'px', 'top': '20', 'right': '20', 'bottom': '20', 'left': '20'}
                 },
-                'elements': [{
-                    'id': self._generate_id(),
-                    'elType': 'widget',
-                    'widgetType': 'counter',
-                    'settings': {
-                        'starting_number': 0,
-                        'ending_number': int(''.join(filter(str.isdigit, stat.get('number', '0')))) or 100,
-                        'suffix': '+' if '+' in stat.get('number', '') else '',
-                        'title': stat.get('label', 'Stat'),
-                        'number_color': '#ffffff',
-                        'title_color': 'rgba(255,255,255,0.8)',
-                        'number_typography_typography': 'custom',
-                        'number_typography_font_family': font,
-                        'number_typography_font_size': {'unit': 'px', 'size': 48},
-                        'number_typography_font_weight': '700'
+                'elements': [
+                    {
+                        'id': self._generate_id(),
+                        'elType': 'widget',
+                        'widgetType': 'counter',
+                        'settings': {
+                            'starting_number': 0,
+                            'ending_number': int(num_only),
+                            'suffix': suffix,
+                            'title': stat.get('label', 'Stat'),
+                            'number_color': '#ffffff',
+                            'title_color': 'rgba(255,255,255,0.85)',
+                            'number_typography_typography': 'custom',
+                            'number_typography_font_family': font,
+                            'number_typography_font_size': {'unit': 'px', 'size': 56},
+                            'number_typography_font_weight': '700',
+                            'title_typography_typography': 'custom',
+                            'title_typography_font_family': font,
+                            'title_typography_font_size': {'unit': 'px', 'size': 16}
+                        }
                     }
-                }]
+                ]
             })
 
         return {
             'id': self._generate_id(),
             'elType': 'container',
             'settings': {
-                'content_width': 'boxed',
-                'boxed_width': {'unit': 'px', 'size': 1200},
+                'content_width': 'full',
                 'flex_direction': 'row',
                 'flex_justify_content': 'space-around',
-                'padding': {'unit': 'px', 'top': spacing.get('section_padding', '60'), 'right': '30', 'bottom': spacing.get('section_padding', '60'), 'left': '30'},
+                'flex_wrap': 'wrap',
+                'padding': {'unit': 'px', 'top': '60', 'right': '50', 'bottom': '60', 'left': '50'},
                 'background_background': 'classic',
-                'background_color': section_spec.get('background_color', colors['primary'])
+                'background_color': colors['primary']
             },
             'elements': stat_widgets
         }
